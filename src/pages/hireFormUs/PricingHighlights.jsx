@@ -23,7 +23,7 @@ export default function PricingHighlights() {
 
           {/* Card 1 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
               <IndianRupee size={28} />
             </div>
 
@@ -41,7 +41,7 @@ export default function PricingHighlights() {
 
           {/* Card 2 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
               <CreditCard size={28} />
             </div>
 
@@ -59,7 +59,7 @@ export default function PricingHighlights() {
 
           {/* Card 3 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
               <Briefcase size={28} />
             </div>
 
@@ -77,7 +77,7 @@ export default function PricingHighlights() {
 
           {/* Card 4 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
               <Headphones size={28} />
             </div>
 

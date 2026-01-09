@@ -37,37 +37,59 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className="md:hidden px-4 pb-3">
-        <div className="flex gap-2 flex-wrap">
-          <NavLink
-            to="/"
-            className="px-4 py-1.5 rounded-full border border-black text-sm font-medium"
-          >
-            Home
-          </NavLink>
+<div className="md:hidden px-4 pb-3">
+  <div
+    className="
+      flex gap-3
+      overflow-x-auto
+      flex-nowrap
+      scrollbar-hide
+    "
+  >
+    <NavLink
+      to="/"
+      className="min-w-max px-4 py-1.5 rounded-full border border-black text-sm font-medium whitespace-nowrap"
+    >
+      Home
+    </NavLink>
 
-          <NavLink
-            to="/join-us"
-            className="px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500"
-          >
-            Join Us
-          </NavLink>
+    <NavLink
+      to="/join-us"
+      className="min-w-max px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500 whitespace-nowrap"
+    >
+      Join Us
+    </NavLink>
 
-          <NavLink
-            to="/hire-from-us"
-            className="px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500"
-          >
-            Hire from Us
-          </NavLink>
+    <NavLink
+      to="/hire-from-us"
+      className="min-w-max px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500 whitespace-nowrap"
+    >
+      Hire from Us
+    </NavLink>
 
-          <NavLink
-            to="/about-us"
-            className="px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500"
-          >
-            About Us
-          </NavLink>
-        </div>
-      </div>
+    <NavLink
+      to="/about-us"
+      className="min-w-max px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500 whitespace-nowrap"
+    >
+      About Us
+    </NavLink>
+
+    <NavLink
+      to="/find-jobs"
+      className="min-w-max px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500 whitespace-nowrap"
+    >
+      Find Jobs
+    </NavLink>
+
+    <NavLink
+      to="/contact-us"
+      className="min-w-max px-4 py-1.5 rounded-full border border-gray-300 text-sm text-gray-500 whitespace-nowrap"
+    >
+      Contact Us
+    </NavLink>
+  </div>
+</div>
+
     </header>
   );
 };

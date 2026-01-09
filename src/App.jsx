@@ -19,9 +19,14 @@ import HowHiringWorks from "./pages/hireFormUs/HowHiringWorks.jsx";
 import WhyChooseUs from "./pages/aboutUs/WhyChooseUs.jsx";
 import OurTeam from "./pages/aboutUs/ourTeam.jsx";
 import ContactUs from "./pages/contactUs/ContactUs.jsx";
+import FindJobs from "./pages/jobs/Findjobs.jsx";
+import PostJobForm from "./pages/hireFormUs/PostJobForm.jsx";
+import CreateTrainerProfile from "./pages/joinUs/CreateTrainerProfile.jsx";
+import CompanyRegistration from "./pages/joinUs/CompanyRegistration.jsx";
 
 
-const FindJobs = () => <div className="p-20 text-center">Find Jobs Page</div>;
+
+// const FindJobs = () => <div className="p-20 text-center">Find Jobs Page</div>;
 
 function App() {
   return (
@@ -64,6 +69,10 @@ function App() {
 
 
         <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/postJob-form" element={<PostJobForm />} />
+        <Route path="/TrainerProfile" element={<CreateTrainerProfile />} />
+        <Route path="/CompanyRegistration" element={<CompanyRegistration />} />
+
       </Routes>
 
       <Footer />

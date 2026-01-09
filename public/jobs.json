@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "company": "Edu Skill Company",
+    "title": "Data Analytics",
+    "skills": ["Python", "Excel", "SQL", "Power BI", "Tableau"],
+    "experience": "2-4 Yrs",
+    "level": "Intermediate",
+    "trainingType": "Corporate Training",
+    "trainingMode": "Offline Mode",
+    "location": "Delhi",
+    "minTeachingExp": "4 Yrs",
+    "accommodation": "Yes",
+    "languages": ["English", "Hindi"],
+    "logo": "/eduSkill.png"
+  },
+  {
+    "id": 2,
+    "company": "NextGen Corporate Solutions",
+    "title": "Full Stack Development",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
+    "experience": "3-5 Yrs",
+    "level": "Intermediate",
+    "trainingType": "College / University",
+    "trainingMode": "Offline Mode",
+    "location": "Noida",
+    "minTeachingExp": "5 Yrs",
+    "accommodation": "No",
+    "languages": ["English", "Hindi"],
+    "logo": "/NextGen.png"
+  },
+  {
+    "id": 3,
+    "company": "Appz Global Solutions",
+    "title": "Digital Marketing",
+    "skills": ["SEO", "Google Ads", "Meta Ads", "Social Media Marketing"],
+    "experience": "2-4 Yrs",
+    "level": "Intermediate",
+    "trainingType": "Corporate Training",
+    "trainingMode": "Offline Mode",
+    "location": "Gurgaon",
+    "minTeachingExp": "3 Yrs",
+    "accommodation": "Yes",
+    "languages": ["English", "Hindi"],
+    "logo": "/Apz.png"
+  }
+]

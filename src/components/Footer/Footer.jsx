@@ -8,11 +8,12 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
+import logo from "../../../public/logo2.png";
 
 export default function Footer() {
   return (
     <footer className="bg-[#2C3447] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-2 pt-16">
 
         {/* Top Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
@@ -104,12 +105,7 @@ export default function Footer() {
 
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <span className="text-3xl font-bold">
-              V<span className="text-red-500">M</span>S
-            </span>
-            <span className="text-xs text-gray-400">
-              VIKASH MANPOWER SOLUTION
-            </span>
+           <img src={logo} alt="Logo" className="w-40 h-40" />
           </div>
 
           {/* Copyright */}

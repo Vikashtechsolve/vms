@@ -1,6 +1,6 @@
 import { Target, Eye } from "lucide-react";
 import teamImg from "../../../public/WhoWeAre.jpg";
-// 👆 image path apne project ke according update kar lena
+
 
 export default function WhoWeAre() {
   return (
@@ -73,7 +73,7 @@ export default function WhoWeAre() {
           </div>
 
           {/* Vision */}
-          <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-6 flex gap-4 items-start">
+          <div className="max-w-3xl mx-auto lg:mr-20 bg-white rounded-xl shadow-md p-6 flex gap-4 items-start">
             <div className="text-blue-600 mt-1">
               <Eye size={26} />
             </div>

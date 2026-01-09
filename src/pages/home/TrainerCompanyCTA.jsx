@@ -21,14 +21,14 @@ export default function TrainerCompanyCTA() {
             professional journey with VMS
           </p>
 
-          <div className="mt-10 flex justify-center gap-6 flex-wrap">
+          <div className="mt-10 flex gap-2 justify-center">
             <button
             //  onClick={() => navigate('/join-us')}
-             className="bg-red-600 hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-base font-medium">
+             className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl font-medium text-sm">
               Join as Trainer
             </button>
 
-            <button className="bg-red-600 hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-base font-medium">
+            <button className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
               Explore Jobs
             </button>
           </div>
@@ -48,12 +48,12 @@ export default function TrainerCompanyCTA() {
             your training and business needs
           </p>
 
-          <div className="mt-10 flex justify-center gap-6 flex-wrap">
-            <button className="bg-red-600 hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-base font-medium">
+          <div className="mt-10 flex gap-2 justify-center">
+            <button className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
               Join as a Company
             </button>
 
-            <button className="bg-red-600 hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-base font-medium">
+            <button className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
               Post a Job
             </button>
           </div>

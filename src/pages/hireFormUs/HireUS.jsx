@@ -4,9 +4,11 @@ import HowHiringWorks from "./HowHiringWorks";
 import PostJobSection from "./PostJobSection";
 import PricingHighlights from "./PricingHighlights";
 import WhyHireFromUs from "./WhyHireFromUs";
+import { useNavigate } from "react-router-dom";
 
 
 export default function HireTrainersHero() {
+  const navigate = useNavigate();
   return (
     <section
       className="relative"
@@ -59,7 +61,8 @@ export default function HireTrainersHero() {
 
       <div className="bg-[#F1F1F1] py-16 mt-20 text-center">
         <h1 className="text-2xl font-semibold text-black">Ready to Hire the Right Trainer?</h1>
-        <button className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-8 py-3 rounded-xl text-base font-medium mt-4">
+        <button onClick={() => navigate('/postJob-form')}
+         className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-8 py-3 rounded-xl text-base font-medium mt-4">
         Post a Job </button>
       </div>
     </section>

@@ -38,7 +38,6 @@ const companySteps = [
 
 export default function HowItWorks() {
   const [activeTab, setActiveTab] = useState("trainers");
-
   const steps = activeTab === "trainers" ? trainerSteps : companySteps;
 
   return (
@@ -46,20 +45,18 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-6 text-center">
         
         {/* Heading */}
-        <h2 className="text-3xl font-semibold text-black">
-          How It Works
-        </h2>
+        <h2 className="text-3xl font-semibold text-black">How It Works</h2>
         <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2"></div>
 
         {/* Toggle */}
         <div className="mt-8 flex justify-center">
-          <div className="bg-gray-100 rounded-full p-2 flex gap-2">
+          <div className="bg-[#EEEEEE] rounded-full p-2 flex gap-2">
             <button
               onClick={() => setActiveTab("trainers")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition
+              className={`px-3 py-2 rounded-full text-sm font-medium transition
                 ${
                   activeTab === "trainers"
-                    ? "bg-red-600 text-white"
+                    ? "bg-[#B11C20] text-white"
                     : "bg-white text-black"
                 }`}
             >
@@ -71,7 +68,7 @@ export default function HowItWorks() {
               className={`px-6 py-2 rounded-full text-sm font-medium transition
                 ${
                   activeTab === "companies"
-                    ? "bg-red-600 text-white"
+                    ? "bg-[#B11C20] text-white"
                     : "bg-white text-black"
                 }`}
             >
@@ -81,11 +78,24 @@ export default function HowItWorks() {
         </div>
 
         {/* Cards */}
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          className="
+            mt-14
+            flex gap-6 overflow-x-auto
+            snap-x snap-mandatory scrollbar-hide
+            md:grid md:grid-cols-3 md:gap-8
+            md:overflow-visible
+          "
+        >
           {steps.map((item) => (
             <div
               key={item.step}
-              className="bg-[#EAF2FF] rounded-xl p-8 shadow-md hover:shadow-lg transition"
+              className="
+                bg-[#EAF2FF] rounded-xl p-8
+                shadow-md hover:shadow-lg transition
+                min-w-[85%] snap-center
+                md:min-w-0
+              "
             >
               {/* Step Circle */}
               <div className="w-12 h-12 mx-auto rounded-full bg-blue-700 text-white flex items-center justify-center text-xl font-semibold">
@@ -102,6 +112,7 @@ export default function HowItWorks() {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

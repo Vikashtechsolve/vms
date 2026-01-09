@@ -11,13 +11,13 @@ export default function PostJobSection() {
     <section className="bg-[#FAFAFA] py-24">
       <div className="max-w-7xl mx-auto px-6 text-center">
 
-        {/* Heading */}
+       
         <h2 className="text-3xl md:text-4xl font-semibold text-black">
           Post a Job to Hire Trainers
         </h2>
         <div className="w-24 h-[2px] bg-blue-600 mx-auto mt-2" />
 
-        {/* Description */}
+        
         <p className="mt-6 max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
           Share your training requirements with us and connect with skilled
           trainers who match your needs. By posting a job, you make it easier
@@ -28,8 +28,8 @@ export default function PostJobSection() {
         {/* Cards */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-          {/* Card 1 */}
-          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-md">
+        
+          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200">
             <User className="mx-auto text-[#B11C20]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Trainer Role & Skills
@@ -43,7 +43,7 @@ export default function PostJobSection() {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-md">
+          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200">
             <TrendingUp className="mx-auto text-[#B11C20]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Experience Level
@@ -57,7 +57,7 @@ export default function PostJobSection() {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-md">
+          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200">
             <Pencil className="mx-auto text-[#B11C20]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Teaching Mode
@@ -70,7 +70,7 @@ export default function PostJobSection() {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-md md:col-span-1 lg:col-span-1">
+          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200 md:col-span-1 lg:col-span-1">
             <Clock className="mx-auto text-[#B11C20]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Duration & Availability
@@ -84,7 +84,7 @@ export default function PostJobSection() {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-md md:col-span-1 lg:col-span-1">
+          <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200 md:col-span-1 lg:col-span-1">
             <Wallet className="mx-auto text-[#B11C20]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Budget

@@ -31,7 +31,7 @@ export default function TrustVerification() {
                 <h3 className="text-xl font-semibold">
                   Verified Trainers Profile
                 </h3>
-                <BadgeCheck className="text-white" />
+                <BadgeCheck  className="text-white" />
               </div>
               <p className="text-gray-300 leading-relaxed text-sm">
                 Every trainer profile goes through a verification process to
@@ -58,7 +58,7 @@ export default function TrustVerification() {
 
           {/* CENTER IMAGE */}
           <div className="flex justify-center">
-            <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-[#3A445C] shadow-xl">
+            <div className="w-80 h-80 rounded-full overflow-hidden border-[#3A445C] shadow-xl">
               <img
                 src={trustImg}
                 alt="Trust & Verification"

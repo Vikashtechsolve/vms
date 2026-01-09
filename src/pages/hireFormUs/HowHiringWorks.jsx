@@ -35,11 +35,24 @@ export default function HowHiringWorks() {
         </div>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div
+          className="
+            flex gap-6 overflow-x-auto
+            snap-x snap-mandatory scrollbar-hide
+            sm:grid sm:grid-cols-2
+            lg:grid-cols-4
+            sm:gap-8
+            sm:overflow-visible
+          "
+        >
           {steps.map((item) => (
             <div
               key={item.step}
-              className="bg-[#E6F0FF] h-72 rounded-xl p-8 shadow-md text-center"
+              className="
+                bg-[#E6F0FF] h-72 rounded-xl p-8 shadow-md text-center
+                min-w-[85%] snap-center
+                sm:min-w-0
+              "
             >
               {/* Step Number */}
               <div className="w-12 h-12 mx-auto rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-semibold">

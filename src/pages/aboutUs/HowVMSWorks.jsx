@@ -46,7 +46,7 @@ export default function HowVMSWorks() {
           {steps.map((item, index) => (
             <div key={index}>
               {/* Icon */}
-              <div className="w-16 h-16 mx-auto rounded-full bg-white shadow flex items-center justify-center text-blue-600">
+              <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
                 {item.icon}
               </div>
 
