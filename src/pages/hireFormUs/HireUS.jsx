@@ -33,11 +33,17 @@ export default function HireTrainersHero() {
 
         {/* BUTTONS */}
         <div className="mt-10 flex justify-center gap-6 flex-wrap">
-          <button className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-8 py-3 rounded-xl text-base font-medium">
+          <button
+            onClick={() => navigate("/CompanyRegistration")}
+            className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-8 py-3 rounded-xl text-base font-medium"
+          >
             Hire Trainers
           </button>
 
-          <button className="border border-black hover:bg-black hover:text-white transition px-8 py-3 rounded-xl text-base font-medium">
+          <button
+            onClick={() => navigate("/postJob-form")}
+            className="border border-black hover:bg-black hover:text-white transition px-8 py-3 rounded-xl text-base font-medium"
+          >
             Post a Job
           </button>
         </div>

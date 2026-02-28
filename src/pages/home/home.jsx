@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import heroImg from "../../../public/home.png"; 
 import { UsersRound, MapPin, UserRoundCheck, CloudCheck} from 'lucide-react';
 
 const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <section
       className="w-full"
@@ -29,11 +32,17 @@ const Home = () => {
 
          
           <div className="mt-8 flex gap-4">
-            <button className="bg-red-600 hover:bg-red-700 transition text-white px-6 py-3 rounded-lg font-medium">
+            <button
+              onClick={() => navigate("/TrainerProfile")}
+              className="bg-red-600 hover:bg-red-700 transition text-white px-6 py-3 rounded-lg font-medium"
+            >
               Join as Trainer
             </button>
 
-            <button className="border border-gray-400 hover:border-black transition px-6 py-3 rounded-lg font-medium text-gray-800">
+            <button
+              onClick={() => navigate("/CompanyRegistration")}
+              className="border border-gray-400 hover:border-black transition px-6 py-3 rounded-lg font-medium text-gray-800"
+            >
               Hire Trainers
             </button>
           </div>

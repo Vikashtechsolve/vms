@@ -5,8 +5,10 @@ import {
   Clock,
   Wallet,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function PostJobSection() {
+  const navigate = useNavigate();
   return (
     <section className="bg-[#FAFAFA] py-24">
       <div className="max-w-7xl mx-auto px-6 text-center">
@@ -101,7 +103,10 @@ export default function PostJobSection() {
 
         {/* CTA Button */}
         <div className="mt-16">
-          <button className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-10 py-3 rounded-xl text-base font-medium">
+          <button
+            onClick={() => navigate("/postJob-form")}
+            className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-10 py-3 rounded-xl text-base font-medium"
+          >
             Post a Job
           </button>
         </div>

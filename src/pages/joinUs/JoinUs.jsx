@@ -116,7 +116,10 @@ export default function JoinVMS() {
                   work with organizations that match your goals.
                 </p>
 
-                <button className="mt-6 bg-[#B11C20] text-white px-6 py-2 rounded-lg">
+                <button
+                  onClick={() => navigate("/TrainerProfile")}
+                  className="mt-6 bg-[#B11C20] hover:bg-red-700 transition text-white px-6 py-2 rounded-lg"
+                >
                   Build your Trainer Profile »
                 </button>
               </div>
@@ -210,7 +213,10 @@ export default function JoinVMS() {
                   and hire trainers who align with your organizational goals.
                 </p>
 
-                <button className="mt-6 bg-[#B11C20] text-white px-6 py-2 rounded-lg">
+                <button
+                  onClick={() => navigate("/CompanyRegistration")}
+                  className="mt-6 bg-[#B11C20] hover:bg-red-700 transition text-white px-6 py-2 rounded-lg"
+                >
                   Hire Training Experts »
                 </button>
               </div>

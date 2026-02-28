@@ -67,9 +67,10 @@ export default function Footer() {
                 <MapPin size={18} />
                 <p>
                   Vikas Tech Solutions,<br />
-                  3rd Floor, ABC Tower,<br />
-                  Sector-15, Noida,<br />
-                  Uttar Pradesh, India
+                  423, 4 th Floor,<br />
+                  samanvay Business Square, <br />
+                  Vaikuth Four crossing, <br />
+                  Vadodara, Gujarat
                 </p>
               </div>
 
@@ -80,7 +81,7 @@ export default function Footer() {
 
               <div className="flex gap-3">
                 <Phone size={18} />
-                <p>+91 9876543210</p>
+                <p>+91 83203 53164</p>
               </div>
             </div>
           </div>
@@ -91,11 +92,51 @@ export default function Footer() {
               Get in Touch
             </h4>
             <div className="flex gap-4 text-white">
-              <Youtube />
-              <Facebook />
-              <Twitter />
-              <Instagram />
-              <Linkedin />
+              <a
+                href="https://www.youtube.com/@fixWithvikas"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="hover:text-red-500 transition-colors duration-200"
+              >
+                <Youtube size={22} />
+              </a>
+              <a
+                href="https://www.facebook.com/VikashTechSolution/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="hover:text-blue-500 transition-colors duration-200"
+              >
+                <Facebook size={22} />
+              </a>
+              <a
+                href="https://x.com/VikashDube9198"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+                className="hover:text-sky-400 transition-colors duration-200"
+              >
+                <Twitter size={22} />
+              </a>
+              <a
+                href="https://www.instagram.com/vikash_tech_solution/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="hover:text-pink-500 transition-colors duration-200"
+              >
+                <Instagram size={22} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/vikash-tech-solution/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="hover:text-blue-400 transition-colors duration-200"
+              >
+                <Linkedin size={22} />
+              </a>
             </div>
           </div>
         </div>

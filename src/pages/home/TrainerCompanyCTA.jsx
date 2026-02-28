@@ -1,13 +1,11 @@
 import { useNavigate } from 'react-router-dom';
 
-
 export default function TrainerCompanyCTA() {
-
-    // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <section className="bg-white">
-      
+
       {/* FOR TRAINERS */}
       <div className="bg-[#EAF2FF] py-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
@@ -23,12 +21,14 @@ export default function TrainerCompanyCTA() {
 
           <div className="mt-10 flex gap-2 justify-center">
             <button
-            //  onClick={() => navigate('/join-us')}
-             className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl font-medium text-sm">
+              onClick={() => navigate('/TrainerProfile')}
+              className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl font-medium text-sm">
               Join as Trainer
             </button>
 
-            <button className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
+            <button
+              onClick={() => navigate('/find-jobs')}
+              className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
               Explore Jobs
             </button>
           </div>
@@ -49,11 +49,15 @@ export default function TrainerCompanyCTA() {
           </p>
 
           <div className="mt-10 flex gap-2 justify-center">
-            <button className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
+            <button
+              onClick={() => navigate('/CompanyRegistration')}
+              className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
               Join as a Company
             </button>
 
-            <button className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
+            <button
+              onClick={() => navigate('/postJob-form')}
+              className="bg-[#B11C20] hover:bg-red-700 transition text-white px-8 py-3 rounded-xl text-sm font-medium">
               Post a Job
             </button>
           </div>

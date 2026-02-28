@@ -9,6 +9,7 @@ import {
   Shield,
   Smartphone,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const categories = [
   {
@@ -59,6 +60,7 @@ const categories = [
 ];
 
 export default function PopularCategories() {
+  const navigate = useNavigate();
   return (
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -97,7 +99,10 @@ export default function PopularCategories() {
         </div>
 
         <div className="flex justify-center mt-8">
-          <button className="bg-[#B11C20] p-4 rounded-2xl text-white">
+          <button
+            onClick={() => navigate('/find-jobs')}
+            className="bg-[#B11C20] hover:bg-[#9C161A] transition p-4 rounded-2xl text-white"
+          >
             See All Categories
           </button>
         </div>
