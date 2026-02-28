@@ -8,7 +8,7 @@ import HowItWorks from "./pages/home/HowItWorks.jsx";
 import PopularCategories from "./pages/home/PopularCategories.jsx";
 import TrainerCompanyCTA from "./pages/home/TrainerCompanyCTA.jsx";
 import WhyChooseVMS from "./pages/home/WhyChoose.jsx";
-import JoinUs from "./pages/JoinUs/JoinUs.jsx";
+import JoinUs from "./pages/joinUs/JoinUs.jsx";
 import HireFromUs from "./pages/hireFormUs/HireUS.jsx";
 import AboutUs from "./pages/aboutUs/AboutHero.jsx";
 import WhoWeAre from "./pages/aboutUs/WhoWeAre.jsx";

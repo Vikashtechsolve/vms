@@ -1,5 +1,5 @@
 import peopleImg from "../../../public/hireUs.png"; 
-import TrustVerification from "../JoinUs/TrustVarification";
+import TrustVerification from "../joinUs/TrustVarification";
 import HowHiringWorks from "./HowHiringWorks";
 import PostJobSection from "./PostJobSection";
 import PricingHighlights from "./PricingHighlights";
