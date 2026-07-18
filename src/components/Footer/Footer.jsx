@@ -35,7 +35,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/" className={footerLink}>
+                <Link to="/find-jobs" className={footerLink}>
                   Trainer Categories
                 </Link>
               </li>
@@ -145,7 +145,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="cursor-pointer hover:text-blue-500 transition-colors duration-200"
+                className="cursor-pointer hover:text-[#C1272D] transition-colors duration-200"
               >
                 <Facebook size={22} />
               </a>
@@ -172,7 +172,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="cursor-pointer hover:text-blue-400 transition-colors duration-200"
+                className="cursor-pointer hover:text-[#C1272D] transition-colors duration-200"
               >
                 <Linkedin size={22} />
               </a>

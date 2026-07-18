@@ -77,7 +77,7 @@ export default function CompanyRegistration() {
   }
 
   return (
-    <section className="min-h-screen bg-[#F5F9FF] px-4 py-6">
+    <section className="min-h-screen bg-[#FAFAFA] px-4 py-6">
       <div className="max-w-5xl mx-auto bg-gradient-to-br from-[#EEF5FF] to-[#F8FBFF] rounded-2xl p-5 sm:p-6 md:p-10">
 
         {/* Page title */}
@@ -220,7 +220,7 @@ function Input({ label, name, placeholder, value, onChange, type = 'text' }) {
         value={value}
         onChange={onChange}
         placeholder={placeholder}
-        className="w-full bg-[#F3F7FF] border border-gray-200 rounded-lg px-4 py-2 text-sm outline-none focus:border-blue-400"
+        className="w-full bg-[#FFF8F8] border border-gray-200 rounded-lg px-4 py-2 text-sm outline-none focus:border-[#C1272D]"
       />
     </div>
   )
@@ -229,7 +229,7 @@ function Input({ label, name, placeholder, value, onChange, type = 'text' }) {
 /* ---------- Checkbox Card ---------- */
 function CheckboxCard({ label, checked, onChange }) {
   return (
-    <label className="flex items-center gap-3 bg-[#F3F7FF] border border-gray-200 rounded-lg px-4 py-3 cursor-pointer hover:border-blue-400 transition">
+    <label className="flex items-center gap-3 bg-[#FFF8F8] border border-gray-200 rounded-lg px-4 py-3 cursor-pointer hover:border-[#C1272D] transition">
       <input
         type="checkbox"
         checked={checked}

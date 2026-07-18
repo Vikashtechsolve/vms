@@ -19,7 +19,7 @@ export default function WhyHireFromUs() {
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             Why Hire Trainers From Us?
           </h2>
-          <div className="w-24 h-[2px] bg-blue-600 mx-auto mt-2" />
+          <div className="w-24 h-[2px] bg-[#C1272D] mx-auto mt-2" />
         </div>
 
         {/* Main Content */}
@@ -39,7 +39,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 1 */}
             <div className="flex gap-4">
-             <BadgeCheck className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
+             <BadgeCheck className="text-[#C1272D] mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Verified & Checked Trainers
@@ -54,7 +54,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 2 */}
             <div className="flex gap-4">
-              <Briefcase className="text-blue-600 mt-1 w-6 h-6 shrink-0"/>
+              <Briefcase className="text-[#C1272D] mt-1 w-6 h-6 shrink-0"/>
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Industry-Experienced Mentors
@@ -69,7 +69,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 3 */}
             <div className="flex gap-4">
-              <PhoneCall className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
+              <PhoneCall className="text-[#C1272D] mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Quality Assurance by Trainer Adda
@@ -84,7 +84,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 4 */}
             <div className="flex gap-4">
-              <Headphones className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
+              <Headphones className="text-[#C1272D] mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Dedicated Support
@@ -99,7 +99,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 5 */}
             <div className="flex gap-4">
-              <UserCheck className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
+              <UserCheck className="text-[#C1272D] mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Best Trainer Match for your Requirements

@@ -46,7 +46,7 @@ export default function HowItWorks() {
         
         {/* Heading */}
         <h2 className="text-3xl font-semibold text-black">How It Works</h2>
-        <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2"></div>
+        <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2"></div>
 
         {/* Toggle */}
         <div className="mt-8 flex justify-center">
@@ -57,7 +57,7 @@ export default function HowItWorks() {
               className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer
                 ${
                   activeTab === "trainers"
-                    ? "bg-[#B11C20] text-white"
+                    ? "bg-[#C1272D] text-white"
                     : "bg-white text-black hover:bg-gray-100"
                 }`}
             >
@@ -70,7 +70,7 @@ export default function HowItWorks() {
               className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer
                 ${
                   activeTab === "companies"
-                    ? "bg-[#B11C20] text-white"
+                    ? "bg-[#C1272D] text-white"
                     : "bg-white text-black hover:bg-gray-100"
                 }`}
             >
@@ -93,14 +93,14 @@ export default function HowItWorks() {
             <div
               key={item.step}
               className="
-                bg-[#EAF2FF] rounded-xl p-8
+                bg-[#FFF5F5] rounded-xl p-8
                 shadow-md hover:shadow-lg transition
                 min-w-[85%] snap-center
                 md:min-w-0
               "
             >
               {/* Step Circle */}
-              <div className="w-12 h-12 mx-auto rounded-full bg-blue-700 text-white flex items-center justify-center text-xl font-semibold">
+              <div className="w-12 h-12 mx-auto rounded-full bg-[#9C161A] text-white flex items-center justify-center text-xl font-semibold">
                 {item.step}
               </div>
 

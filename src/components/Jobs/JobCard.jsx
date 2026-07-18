@@ -46,7 +46,7 @@ export default function JobCard({ job, onApply }) {
       {/* META TAGS */}
       <div className="flex flex-wrap gap-2 text-xs">
         {job.level && (
-          <span className="flex items-center gap-1 bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-medium">
+          <span className="flex items-center gap-1 bg-[#C1272D]/10 text-[#C1272D] px-3 py-1 rounded-full font-medium">
             <BarChart size={12} /> {job.level}
           </span>
         )}

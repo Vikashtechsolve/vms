@@ -70,21 +70,21 @@ export default function CreateTrainerProfile() {
   };
 
   return (
-    <section className="bg-[#F5F9FF] py-12">
+    <section className="bg-[#FAFAFA] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Header */}
         <div className="flex items-center justify-center gap-3 mb-8">
           <div className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
-            <User className="text-blue-600" />
+            <User className="text-[#C1272D]" />
           </div>
-          <h2 className="text-xl sm:text-2xl font-semibold border-b-2 border-blue-600 pb-1">
+          <h2 className="text-xl sm:text-2xl font-semibold border-b-2 border-[#C1272D] pb-1">
             Create Your Trainer Profile
           </h2>
         </div>
 
         {/* Form Card */}
-        <form onSubmit={handleSubmit} className="bg-[#EAF2FF] rounded-2xl p-6 sm:p-8 shadow-sm">
+        <form onSubmit={handleSubmit} className="bg-[#FFF5F5] rounded-2xl p-6 sm:p-8 shadow-sm">
 
           {message.text && (
             <div
@@ -102,7 +102,7 @@ export default function CreateTrainerProfile() {
           </h3>
           <div className="mb-8">
             <Label text="Upload your profile photo" />
-            <label className="mt-2 flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-blue-500 hover:bg-blue-50/50 transition">
+            <label className="mt-2 flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-[#C1272D] hover:bg-[#C1272D]/5 transition">
               <Upload className="w-8 h-8 text-gray-500 mb-2" />
               <span className="text-sm text-gray-600">
                 {photoFile ? photoFile.name : "Click to upload photo (JPG, PNG)"}
@@ -197,7 +197,7 @@ export default function CreateTrainerProfile() {
           {/* Resume Upload */}
           <div className="mt-6">
             <Label text="Resume" />
-            <label className="mt-2 flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-blue-500 hover:bg-blue-50/50 transition">
+            <label className="mt-2 flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-[#C1272D] hover:bg-[#C1272D]/5 transition">
               <FileText className="w-8 h-8 text-gray-500 mb-2" />
               <span className="text-sm text-gray-600">
                 {resumeFile ? resumeFile.name : "Click to upload resume (PDF or DOC)"}
@@ -245,6 +245,7 @@ const Input = ({ label, placeholder, name, value, onChange }) => (
       placeholder={placeholder}
       value={value || ""}
       onChange={onChange}
+      required
       className="input-field"
     />
   </div>
@@ -259,6 +260,7 @@ const PassingYearSelect = ({ label, value, onChange }) => {
       <select
         value={value}
         onChange={onChange}
+        required
         className="input-field"
       >
         <option value="">Select Passing Year</option>

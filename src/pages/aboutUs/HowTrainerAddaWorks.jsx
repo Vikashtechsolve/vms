@@ -38,7 +38,7 @@ export default function HowTrainerAddaWorks() {
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             How Trainer Adda Works
           </h2>
-          <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
+          <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2" />
         </div>
 
         {/* Steps */}
@@ -46,7 +46,7 @@ export default function HowTrainerAddaWorks() {
           {steps.map((item, index) => (
             <div key={index}>
               {/* Icon */}
-              <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
+              <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-[#C1272D]">
                 {item.icon}
               </div>
 

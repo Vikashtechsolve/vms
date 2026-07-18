@@ -6,10 +6,10 @@ export default function TrainerCompanyCTA() {
   return (
     <section className="bg-white pb-8">
       {/* FOR TRAINERS */}
-      <div className="bg-[#EAF2FF] py-16 lg:py-20">
+      <div className="bg-[#FFF5F5] py-16 lg:py-20">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-black">For Trainers</h2>
-          <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
+          <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2" />
 
           <p className="mt-6 text-lg text-gray-700">
             Discover the right training opportunities and grow your
@@ -37,10 +37,10 @@ export default function TrainerCompanyCTA() {
       </div>
 
       {/* FOR COMPANIES */}
-      <div className="bg-[#EAF2FF] py-16 lg:py-20 mt-12 lg:mt-16">
+      <div className="bg-[#FFF5F5] py-16 lg:py-20 mt-12 lg:mt-16">
         <div className="max-w-5xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-black">For Companies</h2>
-          <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
+          <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2" />
 
           <p className="mt-6 text-lg text-gray-700">
             Hire skilled trainers quickly and efficiently to meet

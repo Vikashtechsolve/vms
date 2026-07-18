@@ -10,7 +10,7 @@ import trustImg from "../../../public/circleImg.jpg";
 export default function TrustVerification() {
   return (
     <section className=" py-8 text-white">
-      <div className=" bg-[#2B3247] py-8 mx-auto px-6">
+      <div className="max-w-7xl bg-[#2B3247] py-8 mx-auto px-6 rounded-none lg:rounded-2xl">
 
         {/* Heading */}
         <div className="text-center mb-20">
@@ -58,7 +58,7 @@ export default function TrustVerification() {
 
           {/* CENTER IMAGE */}
           <div className="flex justify-center">
-            <div className="w-80 h-80 rounded-full overflow-hidden border-[#3A445C] shadow-xl">
+            <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-[#3A445C] shadow-xl">
               <img
                 src={trustImg}
                 alt="Trust & Verification"

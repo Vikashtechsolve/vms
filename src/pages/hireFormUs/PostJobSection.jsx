@@ -17,7 +17,7 @@ export default function PostJobSection() {
         <h2 className="text-3xl md:text-4xl font-semibold text-black">
           Post a Job to Hire Trainers
         </h2>
-        <div className="w-24 h-[2px] bg-blue-600 mx-auto mt-2" />
+        <div className="w-24 h-[2px] bg-[#C1272D] mx-auto mt-2" />
 
         
         <p className="mt-6 max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
@@ -32,7 +32,7 @@ export default function PostJobSection() {
 
         
           <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200">
-            <User className="mx-auto text-[#B11C20]" size={32} />
+            <User className="mx-auto text-[#C1272D]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Trainer Role & Skills
             </h3>
@@ -46,7 +46,7 @@ export default function PostJobSection() {
 
           {/* Card 2 */}
           <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200">
-            <TrendingUp className="mx-auto text-[#B11C20]" size={32} />
+            <TrendingUp className="mx-auto text-[#C1272D]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Experience Level
             </h3>
@@ -60,7 +60,7 @@ export default function PostJobSection() {
 
           {/* Card 3 */}
           <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200">
-            <Pencil className="mx-auto text-[#B11C20]" size={32} />
+            <Pencil className="mx-auto text-[#C1272D]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Teaching Mode
             </h3>
@@ -73,7 +73,7 @@ export default function PostJobSection() {
 
           {/* Card 4 */}
           <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200 md:col-span-1 lg:col-span-1">
-            <Clock className="mx-auto text-[#B11C20]" size={32} />
+            <Clock className="mx-auto text-[#C1272D]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Duration & Availability
             </h3>
@@ -87,7 +87,7 @@ export default function PostJobSection() {
 
           {/* Card 5 */}
           <div className="bg-[#F1F1F1] rounded-xl p-8 shadow-lg border border-gray-200 md:col-span-1 lg:col-span-1">
-            <Wallet className="mx-auto text-[#B11C20]" size={32} />
+            <Wallet className="mx-auto text-[#C1272D]" size={32} />
             <h3 className="mt-4 font-semibold text-lg">
               Budget
             </h3>

@@ -69,7 +69,7 @@ export default function PopularCategories() {
           <h2 className="text-3xl font-semibold text-black">
             Popular Trainer Categories
           </h2>
-          <div className="w-24 h-[2px] bg-blue-600 mx-auto mt-2"></div>
+          <div className="w-24 h-[2px] bg-[#C1272D] mx-auto mt-2"></div>
         </div>
 
         {/* Cards */}
@@ -103,7 +103,7 @@ export default function PopularCategories() {
             onClick={() => navigate('/find-jobs')}
             className="btn-primary rounded-2xl px-6 py-3"
           >
-            See All Categories
+            See Available Jobs
           </button>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function WhoWeAre() {
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             Who We Are
           </h2>
-          <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
+          <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2" />
         </div>
 
         {/* Top Content */}
@@ -58,7 +58,7 @@ export default function WhoWeAre() {
 
           {/* Mission */}
           <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-6 flex gap-4 items-start">
-            <div className="text-blue-600 mt-1">
+            <div className="text-[#C1272D] mt-1">
               <Target size={26} />
             </div>
             <div>
@@ -74,7 +74,7 @@ export default function WhoWeAre() {
 
           {/* Vision */}
           <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-6 flex gap-4 items-start">
-            <div className="text-blue-600 mt-1">
+            <div className="text-[#C1272D] mt-1">
               <Eye size={26} />
             </div>
             <div>

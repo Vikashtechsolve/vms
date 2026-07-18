@@ -7,7 +7,7 @@ export default function AboutHero() {
       className="relative overflow-hidden"
       style={{
         background:
-          "radial-gradient(circle at center, #F4F9FF 0%, #E6F0FF 100%)",
+          "radial-gradient(circle at center, #FFF8F8 0%, #FFF0F0 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-6 py-28 text-center relative">

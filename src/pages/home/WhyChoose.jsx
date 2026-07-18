@@ -33,7 +33,7 @@ export default function WhyChooseTrainerAdda() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl font-semibold text-black">Why Choose Trainer Adda</h2>
-          <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2"></div>
+          <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2"></div>
         </div>
 
         {/* Content */}
@@ -51,19 +51,12 @@ export default function WhyChooseTrainerAdda() {
                 {/* Image */}
                 <div className="w-full md:w-1/3 flex justify-center">
                   <div
-                    className=" bg-[#EAF2FF] 
-                            rounded-full 
-                            w-24 h-24 
-                            lg:w-36 lg:h-36 
-                            flex items-center justify-center 
-                            shadow-md"
-                                          >
+                    className="bg-[#C1272D]/10 rounded-full w-24 h-24 lg:w-36 lg:h-36 flex items-center justify-center shadow-md overflow-hidden"
+                  >
                     <img
                       src={item.image}
                       alt={item.title}
-                      className=" w-20 h-20 
-                            lg:w-40 lg:h-40 
-                            object-contain"
+                      className="w-16 h-16 lg:w-28 lg:h-28 object-contain"
                     />
                   </div>
                 </div>
@@ -73,7 +66,7 @@ export default function WhyChooseTrainerAdda() {
                   <h3 className="text-lg font-semibold text-black">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-md text-gray-600 leading-relaxed">
+                  <p className="mt-2 text-base text-gray-600 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>

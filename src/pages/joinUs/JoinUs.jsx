@@ -24,7 +24,7 @@ export default function JoinTrainerAdda() {
       className="relative"
       style={{
         background:
-          "radial-gradient(circle at center, #F4F9FF 0%, #E6F0FF 100%)",
+          "radial-gradient(circle at center, #FFF8F8 0%, #FFF0F0 100%)",
       }}
     >
       {/* ================= TOP SECTION ================= */}
@@ -53,7 +53,7 @@ export default function JoinTrainerAdda() {
               onClick={() => setActive("trainer")}
               className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
                 active === "trainer"
-                  ? "bg-[#B11C20] text-white"
+                  ? "bg-[#C1272D] text-white"
                   : "text-gray-600 hover:bg-white/80"
               }`}
             >
@@ -64,7 +64,7 @@ export default function JoinTrainerAdda() {
               onClick={() => setActive("company")}
               className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
                 active === "company"
-                  ? "bg-[#B11C20] text-white"
+                  ? "bg-[#C1272D] text-white"
                   : "text-gray-600 hover:bg-white/80"
               }`}
             >
@@ -83,7 +83,7 @@ export default function JoinTrainerAdda() {
               <h2 className="text-3xl font-semibold">
                 Start Your Journey as a Trainer
               </h2>
-              <div className="w-24 h-[2px] bg-blue-600 mx-auto mt-2" />
+              <div className="w-24 h-[2px] bg-[#C1272D] mx-auto mt-2" />
 
               <p className="mt-4 text-lg text-gray-700">
                 Create your profile, apply for opportunities, and get hired by
@@ -92,9 +92,8 @@ export default function JoinTrainerAdda() {
 
               {/* Info Card */}
               <div
-                className="mt-10  bg-[#EAF2FF] rounded-xl p-6 sm:p-8 lg:p-10 w-full lg:max-w-7xl
-                 sm:mx-6 lg:ml-20 lg:mr-0">
-                <User className="mx-auto text-blue-700 mb-4" size={36} />
+                className="mt-10 bg-[#C1272D]/5 rounded-xl p-6 sm:p-8 lg:p-10 w-full max-w-4xl mx-auto">
+                <User className="mx-auto text-[#C1272D] mb-4" size={36} />
                 <h3 className="font-semibold text-lg">Join as a Trainer</h3>
                 <p className="text-sm text-left sm:text-center text-gray-600 mt-3 leading-relaxed">
                   Become part of a trusted training network where your skills
@@ -122,7 +121,7 @@ export default function JoinTrainerAdda() {
 
               {/* How it Works */}
               <h3 className="text-2xl font-semibold mt-16">How It Works</h3>
-              <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
+              <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2" />
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-12">
                 {[
@@ -142,13 +141,13 @@ export default function JoinTrainerAdda() {
                     desc: "Browse available training opportunities posted by companies and apply to roles that match your skills, experience level, and career goals.",
                   },
                   {
-                    icon: <UserPlus fill="blue" />,
+                    icon: <UserPlus fill="#C1272D" />,
                     title: "Get Hired",
                     desc: "Connect directly with hiring companies, attend interviews or discussions, finalize terms, and begin delivering training with confidence.",
                   },
                 ].map((item, i) => (
                   <div key={i} className="text-center">
-                    <div className="w-14 h-14 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-700">
+                    <div className="w-14 h-14 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-[#C1272D]">
                       {item.icon}
                     </div>
                     <h4 className="mt-4 font-semibold">{item.title}</h4>
@@ -179,7 +178,7 @@ export default function JoinTrainerAdda() {
               <h2 className="text-3xl font-semibold">
                 Start Hiring with Confidence
               </h2>
-              <div className="w-24 h-[2px] bg-blue-600 mx-auto mt-2" />
+              <div className="w-24 h-[2px] bg-[#C1272D] mx-auto mt-2" />
 
               <p className="mt-4 text-lg text-gray-700">
                 Post requirements, connect with skilled trainers, and hire the
@@ -188,9 +187,8 @@ export default function JoinTrainerAdda() {
 
               {/* Info Card */}
               <div
-                className="mt-10  bg-[#EAF2FF] rounded-xl p-6 sm:p-8 lg:p-10 w-full lg:max-w-7xl
-                 sm:mx-6 lg:ml-20 lg:mr-0">
-                <Building2 className="mx-auto text-blue-700 mb-4" size={36} />
+                className="mt-10 bg-[#C1272D]/5 rounded-xl p-6 sm:p-8 lg:p-10 w-full max-w-4xl mx-auto">
+                <Building2 className="mx-auto text-[#C1272D] mb-4" size={36} />
                 <h3 className="font-semibold text-lg">Join as a Company</h3>
                 <p className="text-sm text-left sm:text-center text-gray-600 mt-3 leading-relaxed">
                   Join Trainer Adda to access a curated pool of skilled and
@@ -219,7 +217,7 @@ export default function JoinTrainerAdda() {
 
               {/* How it Works */}
               <h3 className="text-2xl font-semibold mt-16">How It Works</h3>
-              <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
+              <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2" />
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mt-12">
                 {[
@@ -245,7 +243,7 @@ export default function JoinTrainerAdda() {
                   },
                 ].map((item, i) => (
                   <div key={i} className="text-center">
-                    <div className="w-14 h-14 mx-auto rounded-full bg-white shadow flex items-center justify-center text-blue-700">
+                    <div className="w-14 h-14 mx-auto rounded-full bg-white shadow flex items-center justify-center text-[#C1272D]">
                       {item.icon}
                     </div>
                     <h4 className="mt-4 font-semibold">{item.title}</h4>

@@ -25,7 +25,7 @@ export default function BrandLogo({
     <span className={`inline-flex items-center gap-2.5 sm:gap-3 min-w-0 ${className}`}>
       <img
         src={icon}
-        alt=""
+        alt="Trainer Adda"
         className={`${iconClassName} object-contain shrink-0`}
         draggable={false}
       />
@@ -36,14 +36,14 @@ export default function BrandLogo({
           Trainer <span className="text-[#C1272D]">Adda</span>
         </span>
         {showTagline && (
-          <span className="hidden sm:flex items-center gap-2 mt-1.5">
-            <span className="h-px w-4 bg-[#C1272D]" />
+          <span className="flex items-center gap-1.5 sm:gap-2 mt-1 sm:mt-1.5">
+            <span className="h-px w-3 sm:w-4 bg-[#C1272D]" />
             <span
-              className={`text-[9px] md:text-[10px] font-medium tracking-[0.18em] uppercase ${muted}`}
+              className={`text-[8px] sm:text-[9px] md:text-[10px] font-medium tracking-[0.12em] sm:tracking-[0.18em] uppercase ${muted}`}
             >
               Train. Empower. Excel.
             </span>
-            <span className={`h-px w-4 ${lineMain}`} />
+            <span className={`h-px w-3 sm:w-4 ${lineMain}`} />
           </span>
         )}
       </span>

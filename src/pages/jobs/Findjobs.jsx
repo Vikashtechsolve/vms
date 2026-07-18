@@ -112,7 +112,7 @@ export default function FindJobs() {
         type="checkbox"
         checked={checked}
         onChange={onChange}
-        className="accent-[#B11C20] w-4 h-4 cursor-pointer"
+        className="accent-[#C1272D] w-4 h-4 cursor-pointer"
       />
       {label}
     </label>
@@ -163,7 +163,7 @@ export default function FindJobs() {
           <button
             type="button"
             onClick={handleSearch}
-            className="bg-[#B11C20] hover:bg-[#8f1519] text-white px-7 py-2.5 rounded-xl text-sm font-semibold transition-colors"
+            className="bg-[#C1272D] hover:bg-[#8f1519] text-white px-7 py-2.5 rounded-xl text-sm font-semibold transition-colors"
           >
             Find Jobs
           </button>
@@ -175,10 +175,10 @@ export default function FindJobs() {
           <aside className="bg-white rounded-2xl shadow-md p-6 space-y-4 h-fit">
             <div className="flex items-center justify-between mb-2">
               <div className="flex items-center gap-2 text-base font-semibold text-gray-800">
-                <SlidersHorizontal size={18} className="text-[#B11C20]" />
+                <SlidersHorizontal size={18} className="text-[#C1272D]" />
                 All Filters
                 {activeFilterCount > 0 && (
-                  <span className="bg-[#B11C20] text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                  <span className="bg-[#C1272D] text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
                     {activeFilterCount}
                   </span>
                 )}
@@ -187,7 +187,7 @@ export default function FindJobs() {
                 <button
                   type="button"
                   onClick={clearFilters}
-                  className="text-xs text-[#B11C20] font-medium hover:underline"
+                  className="text-xs text-[#C1272D] font-medium hover:underline"
                 >
                   Clear all
                 </button>
@@ -198,7 +198,7 @@ export default function FindJobs() {
               <input
                 type="text"
                 placeholder="e.g. 2-4 Yrs"
-                className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#B11C20]"
+                className="w-full px-3 py-2 border border-gray-200 rounded-lg text-sm outline-none focus:border-[#C1272D]"
                 value={filters.experience}
                 onChange={(e) => setFilters({ ...filters, experience: e.target.value })}
               />
@@ -308,7 +308,7 @@ export default function FindJobs() {
                   <button
                     type="button"
                     onClick={clearFilters}
-                    className="mt-2 text-[#B11C20] text-sm font-semibold hover:underline"
+                    className="mt-2 text-[#C1272D] text-sm font-semibold hover:underline"
                   >
                     Clear all filters
                   </button>

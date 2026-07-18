@@ -31,7 +31,7 @@ export default function HowHiringWorks() {
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             How Hiring Works
           </h2>
-          <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
+          <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2" />
         </div>
 
         {/* Steps */}
@@ -49,13 +49,13 @@ export default function HowHiringWorks() {
             <div
               key={item.step}
               className="
-                bg-[#E6F0FF] min-h-72 rounded-xl p-8 shadow-md text-center
+                bg-[#FFF0F0] min-h-72 rounded-xl p-8 shadow-md text-center
                 min-w-[85%] snap-center
                 sm:min-w-0
               "
             >
               {/* Step Number */}
-              <div className="w-12 h-12 mx-auto rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-semibold">
+              <div className="w-12 h-12 mx-auto rounded-full bg-[#9C161A] text-white flex items-center justify-center text-lg font-semibold">
                 {item.step}
               </div>
 

@@ -40,6 +40,14 @@ export default function PostJobForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    if (!form.accommodation) {
+      setMessage({ type: 'error', text: 'Please select whether accommodation is provided.' })
+      return
+    }
+    if (!form.language.length) {
+      setMessage({ type: 'error', text: 'Please select at least one language preference.' })
+      return
+    }
     setLoading(true)
     setMessage({ type: '', text: '' })
     try {
@@ -65,21 +73,24 @@ export default function PostJobForm() {
   }
 
   return (
-    <section className="bg-[#F5F9FF] py-16">
+    <section className="bg-[#FAFAFA] py-16">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
         <div className="flex items-center justify-center gap-3 mb-10">
-          <div className="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center">
-            🔍
+          <div className="w-10 h-10 rounded-full bg-[#C1272D] text-white shadow flex items-center justify-center">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
+            </svg>
           </div>
-          <h2 className="text-2xl font-semibold border-b-2 border-blue-600">
+          <h2 className="text-2xl font-semibold border-b-2 border-[#C1272D]">
             Post a Job
           </h2>
         </div>
 
         {/* Form Card */}
-        <form onSubmit={handleSubmit} className="bg-[#EAF2FF] rounded-2xl p-8 shadow-sm">
+        <form onSubmit={handleSubmit} className="bg-[#FFF5F5] rounded-2xl p-8 shadow-sm">
 
           {/* Status message */}
           {message.text && (
@@ -278,6 +289,7 @@ export default function PostJobForm() {
                   value="Yes"
                   checked={form.accommodation === 'Yes'}
                   onChange={handleChange}
+                  required
                   className="w-4 h-4"
                 /> Yes
               </label>

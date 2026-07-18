@@ -57,12 +57,12 @@ export default function ContactUs() {
 
   const inputBase = "w-full px-5 py-4 rounded-lg border focus:outline-none focus:ring-2 bg-[#EAF3FF] transition";
   const inputClass = (field) =>
-    `${inputBase} ${errors[field] ? "border-red-400 focus:ring-red-300" : "border-gray-300 focus:ring-blue-500"}`;
+    `${inputBase} ${errors[field] ? "border-red-400 focus:ring-red-300" : "border-gray-300 focus:ring-[#C1272D]"}`;
 
   return (
     <section
       className="relative py-24"
-      style={{ background: "radial-gradient(circle at center, #F4F9FF 0%, #E6F0FF 100%)" }}
+      style={{ background: "radial-gradient(circle at center, #FFF8F8 0%, #FFF0F0 100%)" }}
     >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* LEFT */}
@@ -177,7 +177,7 @@ export default function ContactUs() {
                   placeholder="Write your message here…"
                   value={form.message}
                   onChange={set("message")}
-                  className="w-full px-5 py-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-[#EAF3FF] resize-none transition"
+                  className="w-full px-5 py-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#C1272D] bg-[#EAF3FF] resize-none transition"
                 />
               </div>
 
@@ -204,14 +204,14 @@ export default function ContactUs() {
       <section className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-semibold text-black">Support Hours</h2>
-          <div className="w-24 h-[2px] bg-blue-600 mt-2"></div>
+          <div className="w-24 h-[2px] bg-[#C1272D] mt-2"></div>
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <img src={contactSupport} alt="Support Team" className="rounded-xl shadow-md w-full object-cover" />
             </div>
-            <div className="bg-[#F4F9FF] rounded-xl shadow-md p-10">
+            <div className="bg-[#FFF8F8] rounded-xl shadow-md p-10">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white shrink-0">🎧</div>
+                <div className="w-12 h-12 rounded-full bg-[#C1272D] flex items-center justify-center text-white shrink-0">🎧</div>
                 <div>
                   <h3 className="text-xl font-semibold text-black">Our Support Hours</h3>
                   <p className="mt-4 text-gray-700 leading-relaxed">
@@ -233,7 +233,7 @@ export default function ContactUs() {
       <section className="bg-[#FAFAFA] py-24">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-semibold text-black text-center">Your Privacy, Our Responsibility</h2>
-          <div className="w-32 h-[2px] bg-blue-600 mx-auto mt-2"></div>
+          <div className="w-32 h-[2px] bg-[#C1272D] mx-auto mt-2"></div>
           <div className="mt-20 bg-[#F1F1F1] rounded-xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <img src={contactPrivacy} alt="Privacy & Security" className="rounded-xl h-80 shadow-md w-full object-cover" />

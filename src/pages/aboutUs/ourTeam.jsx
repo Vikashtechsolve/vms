@@ -47,7 +47,7 @@ export default function OurTeam() {
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             Our Team
           </h2>
-          <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2"></div>
+          <div className="w-20 h-[2px] bg-[#C1272D] mx-auto mt-2"></div>
         </div>
 
         {/* Team Grid */}

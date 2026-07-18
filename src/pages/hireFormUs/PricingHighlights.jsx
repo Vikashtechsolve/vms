@@ -15,7 +15,7 @@ export default function PricingHighlights() {
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             Simple & Transparent Pricing
           </h2>
-          <div className="w-24 h-[2px] bg-blue-600 mx-auto mt-2" />
+          <div className="w-24 h-[2px] bg-[#C1272D] mx-auto mt-2" />
         </div>
 
         {/* Pricing Cards */}
@@ -23,7 +23,7 @@ export default function PricingHighlights() {
 
           {/* Card 1 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-[#C1272D]">
               <IndianRupee size={28} />
             </div>
 
@@ -41,7 +41,7 @@ export default function PricingHighlights() {
 
           {/* Card 2 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-[#C1272D]">
               <CreditCard size={28} />
             </div>
 
@@ -59,7 +59,7 @@ export default function PricingHighlights() {
 
           {/* Card 3 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-[#C1272D]">
               <Briefcase size={28} />
             </div>
 
@@ -77,7 +77,7 @@ export default function PricingHighlights() {
 
           {/* Card 4 */}
           <div>
-            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-blue-600">
+            <div className="w-16 h-16 mx-auto rounded-full bg-white shadow-lg border border-gray-200 flex items-center justify-center text-[#C1272D]">
               <Headphones size={28} />
             </div>
 
