@@ -12,7 +12,7 @@ import hireImg from "../../../public/image.jpg";
 export default function WhyHireFromUs() {
   return (
     <section className="bg-[#F1F1F1] py-8">
-      <div className="max-w-8xl mx-auto px-8 ">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
 
         {/* Heading */}
         <div className="text-center  mb-16">
@@ -39,7 +39,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 1 */}
             <div className="flex gap-4">
-             <BadgeCheck className="text-blue-600 mt-1 w-20 md:w-6 md:h-6" />
+             <BadgeCheck className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Verified & Checked Trainers
@@ -54,7 +54,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 2 */}
             <div className="flex gap-4">
-              <Briefcase className="text-blue-600 mt-1 w-20 md:w-6 md:h-6"/>
+              <Briefcase className="text-blue-600 mt-1 w-6 h-6 shrink-0"/>
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Industry-Experienced Mentors
@@ -69,13 +69,13 @@ export default function WhyHireFromUs() {
 
             {/* Item 3 */}
             <div className="flex gap-4">
-              <PhoneCall className="text-blue-600 mt-1 w-20 md:w-6 md:h-6" />
+              <PhoneCall className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
-                  Quality Assurance by VTS
+                  Quality Assurance by Trainer Adda
                 </h3>
                 <p className="mt-2 text-gray-600 text-sm leading-relaxed">
-                  VTS ensures training quality by reviewing profiles,
+                  Trainer Adda ensures training quality by reviewing profiles,
                   monitoring feedback, and maintaining high professional
                   standards.
                 </p>
@@ -84,7 +84,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 4 */}
             <div className="flex gap-4">
-              <Headphones className="text-blue-600 mt-1 w-20 md:w-6 md:h-6" />
+              <Headphones className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Dedicated Support
@@ -99,7 +99,7 @@ export default function WhyHireFromUs() {
 
             {/* Item 5 */}
             <div className="flex gap-4">
-              <UserCheck className="text-blue-600 mt-1 w-20 md:w-6 md:h-6" />
+              <UserCheck className="text-blue-600 mt-1 w-6 h-6 shrink-0" />
               <div>
                 <h3 className="text-lg font-semibold text-black">
                   Best Trainer Match for your Requirements

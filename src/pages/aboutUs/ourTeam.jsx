@@ -2,7 +2,7 @@ const teamMembers = [
   {
     name: "Vikash Dubey",
     role: "Founder & Tech Mentor",
-    desc: "Vikash Dubey is the visionary behind Vikash Tech Solutions, dedicated to transforming the way students and professionals learn. With deep expertise in full-stack development and product architecture.",
+    desc: "Vikash Dubey is the visionary behind Trainer Adda, dedicated to transforming the way trainers and organizations connect. With deep expertise in full-stack development and product architecture, he leads the platform’s vision for quality training and hiring.",
     img: "/vikashDubey.jpg",
   },
   {
@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Jiya Kapoor",
     role: "UI/UX Designer",
     desc: "A passionate UI/UX Designer dedicated to crafting intuitive, user-centered digital experiences and visually stunning interfaces.",
-    img: "Jiya.jpg",
+    img: "/Jiya.jpg",
   },
   {
     name: "Mustakim Shaikh",

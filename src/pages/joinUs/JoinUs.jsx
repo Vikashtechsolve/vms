@@ -1,15 +1,11 @@
 import { useState } from "react";
 import {
   User,
-  FileText,
-  Send,
-  CheckCircle,
   Building2,
   ClipboardList,
   Users,
   BadgeCheck,
   Globe,
-  FilePlus,
   FilePlusCorner,
   IdCard,
   UserPlus,
@@ -19,7 +15,7 @@ import peopleImg from "../../../public/joinUs.png";
 import TrustVerification from "./TrustVarification";
 import { useNavigate } from "react-router-dom";
 
-export default function JoinVMS() {
+export default function JoinTrainerAdda() {
   const [active, setActive] = useState("trainer");
   const navigate = useNavigate();
 
@@ -32,15 +28,15 @@ export default function JoinVMS() {
       }}
     >
       {/* ================= TOP SECTION ================= */}
-      <div className="max-w-7xl mx-auto px-6 py-4 lg:py-24 text-center relative">
+      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-24 text-center relative">
         <h1 className="text-2xl md:text-5xl font-semibold text-black text-left md:text-center">
-          Join VMS & <br className=" md:block" />
+          Join Trainer Adda & <br className=" md:block" />
           Grow your Training Career
         </h1>
 
         {/* Right Image */}
         <div className="absolute right-0 bottom-0 hidden lg:block">
-          <img src={peopleImg} alt="VMS Team" className="w-[300px]" />
+          <img src={peopleImg} alt="Trainer Adda Team" className="w-[300px]" />
         </div>
 
         <p className="mt-6 md:text-justify max-w-4xl mx-auto text-lg text-gray-700">
@@ -55,10 +51,10 @@ export default function JoinVMS() {
           <div className="bg-[#EFEFEF] rounded-full p-2 flex gap-2">
             <button
               onClick={() => setActive("trainer")}
-              className={`px-6 py-2 rounded-full text-sm font-medium ${
+              className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
                 active === "trainer"
                   ? "bg-[#B11C20] text-white"
-                  : "text-gray-600"
+                  : "text-gray-600 hover:bg-white/80"
               }`}
             >
               Join as Trainer
@@ -66,10 +62,10 @@ export default function JoinVMS() {
 
             <button
               onClick={() => setActive("company")}
-              className={`px-6 py-2 rounded-full text-sm font-medium ${
+              className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer ${
                 active === "company"
                   ? "bg-[#B11C20] text-white"
-                  : "text-gray-600"
+                  : "text-gray-600 hover:bg-white/80"
               }`}
             >
               Join as Company
@@ -102,7 +98,7 @@ export default function JoinVMS() {
                 <h3 className="font-semibold text-lg">Join as a Trainer</h3>
                 <p className="text-sm text-left sm:text-center text-gray-600 mt-3 leading-relaxed">
                   Become part of a trusted training network where your skills
-                  and experience are valued. By joining VTS Manpower, you can
+                  and experience are valued. By joining Trainer Adda, you can
                   create a professional trainer profile, showcase your
                   expertise, and connect with verified companies looking for
                   qualified trainers. Our platform helps you find relevant
@@ -111,14 +107,14 @@ export default function JoinVMS() {
                 </p>
                 <p className="text-sm text-left sm:text-center text-gray-600 mt-3 leading-relaxed">
                   Whether you are an experienced trainer or just starting your
-                  professional journey, VTS Manpower provides a transparent and
+                  professional journey, Trainer Adda provides a transparent and
                   secure environment to grow your career, expand your reach, and
                   work with organizations that match your goals.
                 </p>
 
                 <button
                   onClick={() => navigate("/TrainerProfile")}
-                  className="mt-6 bg-[#B11C20] hover:bg-red-700 transition text-white px-6 py-2 rounded-lg"
+                  className="btn-primary mt-6"
                 >
                   Build your Trainer Profile »
                 </button>
@@ -133,7 +129,7 @@ export default function JoinVMS() {
                   {
                     icon: <Globe />,
                     title: "Join the Platform",
-                    desc: "Register on VMS to become part of a growing network of professional trainers across multiple domains. Create your account in minutes and start your journey with us.",
+                    desc: "Register on Trainer Adda to become part of a growing network of professional trainers across multiple domains. Create your account in minutes and start your journey with us.",
                   },
                   {
                     icon: <FilePlusCorner />,
@@ -165,11 +161,11 @@ export default function JoinVMS() {
               </div>
               <div className="justify-center items-center py-10 px-6 flex flex-col gap-6">
                 <h1 className="text-2xl font-bold text-center">
-                  Ready to get started with VTS MANPOWER
+                  Ready to get started with Trainer Adda
                 </h1>
                 <button
                   onClick={() => navigate("/TrainerProfile")}
-                  className="bg-[#B11C20] ali hover:bg-red-700 transition text-white px-6 py-3 rounded-lg font-medium"
+                  className="btn-primary"
                 >
                   Join as a Trainer
                 </button>
@@ -197,7 +193,7 @@ export default function JoinVMS() {
                 <Building2 className="mx-auto text-blue-700 mb-4" size={36} />
                 <h3 className="font-semibold text-lg">Join as a Company</h3>
                 <p className="text-sm text-left sm:text-center text-gray-600 mt-3 leading-relaxed">
-                  Join VTS Manpower to access a curated pool of skilled and
+                  Join Trainer Adda to access a curated pool of skilled and
                   verified trainers across multiple domains. By registering your
                   company, you can post your training requirements, review
                   detailed trainer profiles, and connect directly with
@@ -208,14 +204,14 @@ export default function JoinVMS() {
 
                 <p className="text-sm text-left sm:text-center text-gray-600 mt-3 leading-relaxed">
                   Whether you require trainers for short-term programs or
-                  long-term engagements, VTS Manpower provides a reliable and
+                  long-term engagements, Trainer Adda provides a reliable and
                   secure environment to evaluate candidates, conduct interviews,
                   and hire trainers who align with your organizational goals.
                 </p>
 
                 <button
                   onClick={() => navigate("/CompanyRegistration")}
-                  className="mt-6 bg-[#B11C20] hover:bg-red-700 transition text-white px-6 py-2 rounded-lg"
+                  className="btn-primary mt-6"
                 >
                   Hire Training Experts »
                 </button>
@@ -230,7 +226,7 @@ export default function JoinVMS() {
                   {
                     icon: <Building2 />,
                     title: "Join the Platform",
-                    desc: "Sign up your organization on VMS to access a curated pool of qualified and verified trainers across various technical and professional domains.",
+                    desc: "Sign up your organization on Trainer Adda to access a curated pool of qualified and verified trainers across various technical and professional domains.",
                   },
                   {
                     icon: <ClipboardList />,
@@ -262,11 +258,11 @@ export default function JoinVMS() {
               </div>
               <div className="justify-center items-center py-10 px-6 flex flex-col gap-6">
                 <h1 className="text-2xl font-bold text-center">
-                  Ready to get started with VTS MANPOWER
+                  Ready to get started with Trainer Adda
                 </h1>
                 <button
                   onClick={() => navigate("/CompanyRegistration")}
-                  className="bg-[#B11C20] ali hover:bg-red-700 transition text-white px-6 py-3 rounded-lg font-medium"
+                  className="btn-primary"
                 >
                   Join as a company
                 </button>

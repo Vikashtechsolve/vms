@@ -7,15 +7,14 @@ import Home from "./pages/home/home.jsx";
 import HowItWorks from "./pages/home/HowItWorks.jsx";
 import PopularCategories from "./pages/home/PopularCategories.jsx";
 import TrainerCompanyCTA from "./pages/home/TrainerCompanyCTA.jsx";
-import WhyChooseVMS from "./pages/home/WhyChoose.jsx";
+import WhyChooseTrainerAdda from "./pages/home/WhyChoose.jsx";
 import JoinUs from "./pages/joinUs/JoinUs.jsx";
 import HireFromUs from "./pages/hireFormUs/HireUS.jsx";
 import AboutUs from "./pages/aboutUs/AboutHero.jsx";
 import WhoWeAre from "./pages/aboutUs/WhoWeAre.jsx";
 import WhatWeProvide from "./pages/aboutUs/WhatWeProvide.jsx";
-import HowVMSWorks from "./pages/aboutUs/HowVMSWorks.jsx";
+import HowTrainerAddaWorks from "./pages/aboutUs/HowTrainerAddaWorks.jsx";
 import TrustTransparency from "./pages/aboutUs/TrustTransparency.jsx";
-import HowHiringWorks from "./pages/hireFormUs/HowHiringWorks.jsx";
 import WhyChooseUs from "./pages/aboutUs/WhyChooseUs.jsx";
 import OurTeam from "./pages/aboutUs/ourTeam.jsx";
 import ContactUs from "./pages/contactUs/ContactUs.jsx";
@@ -42,7 +41,7 @@ function App() {
               <Home />
               <HowItWorks />
               <PopularCategories />
-              <WhyChooseVMS />
+              <WhyChooseTrainerAdda />
               <TrainerCompanyCTA />
             </>
           }
@@ -58,7 +57,7 @@ function App() {
               <AboutUs />
               <WhoWeAre/>
               <WhatWeProvide />
-              <HowVMSWorks/>
+              <HowTrainerAddaWorks/>
               <TrustTransparency/>
               <WhyChooseUs/>
               <OurTeam/>

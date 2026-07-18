@@ -94,8 +94,9 @@ export default function ContactUs() {
                 Thank you for reaching out. Our team will get back to you within our support hours.
               </p>
               <button
+                type="button"
                 onClick={() => setSuccess(false)}
-                className="mt-2 px-8 py-3 bg-[#B11C20] text-white rounded-lg font-medium hover:bg-red-700 transition"
+                className="btn-primary mt-2 px-8"
               >
                 Send Another Message
               </button>
@@ -183,7 +184,7 @@ export default function ContactUs() {
               <button
                 type="submit"
                 disabled={loading}
-                className="mt-2 px-10 py-4 bg-[#B11C20] text-white rounded-lg font-medium hover:bg-red-700 transition disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-2"
+                className="btn-primary mt-2 px-10 py-4 flex items-center gap-2"
               >
                 {loading ? (
                   <>
@@ -233,7 +234,7 @@ export default function ContactUs() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-semibold text-black text-center">Your Privacy, Our Responsibility</h2>
           <div className="w-32 h-[2px] bg-blue-600 mx-auto mt-2"></div>
-          <div className="mt-20 bg-[#F1F1F1] p-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="mt-20 bg-[#F1F1F1] rounded-xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <img src={contactPrivacy} alt="Privacy & Security" className="rounded-xl h-80 shadow-md w-full object-cover" />
             </div>

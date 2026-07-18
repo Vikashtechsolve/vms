@@ -197,7 +197,7 @@ export default function CompanyRegistration() {
             <button
               type="submit"
               disabled={loading}
-              className="bg-red-600 text-white px-8 py-2 rounded-md shadow hover:bg-red-700 disabled:opacity-70 disabled:cursor-not-allowed transition"
+              className="btn-primary disabled:opacity-70 disabled:cursor-not-allowed"
             >
               {loading ? 'Submitting...' : 'Submit Application'}
             </button>

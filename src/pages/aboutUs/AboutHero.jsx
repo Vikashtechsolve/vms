@@ -19,17 +19,17 @@ export default function AboutHero() {
 
         {/* DESCRIPTION */}
         <p className="mt-8 max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed">
-          Vikash Manpower Solution is a trusted manpower platform designed to
+          Trainer Adda is a trusted platform designed to
           help trainers find the right opportunities and enable companies to
           hire skilled training professionals with confidence.
         </p>
 
         {/* RIGHT IMAGE */}
-        <div className="absolute left-10/12 bottom-0 hidden lg:block">
+        <div className="absolute right-0 bottom-0 hidden lg:block pointer-events-none">
           <img
             src={aboutImg}
-            alt="VMS Team"
-            className="w-[390px]"
+            alt="Trainer Adda Team"
+            className="w-[340px]"
           />
         </div>
       </div>

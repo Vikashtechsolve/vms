@@ -208,7 +208,7 @@ export default function ApplyModal({ job, onClose }) {
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 py-3 rounded-xl bg-[#B11C20] hover:bg-[#8f1519] text-white text-sm font-semibold flex items-center justify-center gap-2 transition-colors disabled:opacity-70 disabled:cursor-not-allowed"
+              className="btn-primary flex-1 py-3 rounded-xl flex items-center justify-center gap-2"
             >
               {loading ? (
                 <>

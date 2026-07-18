@@ -8,26 +8,42 @@ import {
   Instagram,
   Linkedin,
 } from "lucide-react";
-import logo from "../../../public/logo2.png";
+import { Link } from "react-router-dom";
+import BrandLogo from "../BrandLogo.jsx";
+
+const footerLink = "cursor-pointer hover:text-white transition-colors duration-200";
 
 export default function Footer() {
   return (
     <footer className="bg-[#2C3447] text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-2 pt-16">
-
-        {/* Top Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
-
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* For Trainers */}
           <div>
             <h4 className="font-semibold mb-4 underline underline-offset-8">
               For Trainers
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li>Join as Trainer</li>
-              <li>Explore Jobs</li>
-              <li>Trainer Categories</li>
-              <li>How it Works</li>
+              <li>
+                <Link to="/TrainerProfile" className={footerLink}>
+                  Join as Trainer
+                </Link>
+              </li>
+              <li>
+                <Link to="/find-jobs" className={footerLink}>
+                  Explore Jobs
+                </Link>
+              </li>
+              <li>
+                <Link to="/" className={footerLink}>
+                  Trainer Categories
+                </Link>
+              </li>
+              <li>
+                <Link to="/join-us" className={footerLink}>
+                  How it Works
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -37,9 +53,21 @@ export default function Footer() {
               For Companies
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li>Hire Trainers</li>
-              <li>Post a Job</li>
-              <li>How it Works</li>
+              <li>
+                <Link to="/CompanyRegistration" className={footerLink}>
+                  Hire Trainers
+                </Link>
+              </li>
+              <li>
+                <Link to="/postJob-form" className={footerLink}>
+                  Post a Job
+                </Link>
+              </li>
+              <li>
+                <Link to="/hire-from-us" className={footerLink}>
+                  How it Works
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -49,39 +77,50 @@ export default function Footer() {
               Company & Support
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
-              <li>About Us</li>
-              <li>Contact Us</li>
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
+              <li>
+                <Link to="/about-us" className={footerLink}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact-us" className={footerLink}>
+                  Contact Us
+                </Link>
+              </li>
+              <li className="text-gray-500">Privacy Policy</li>
+              <li className="text-gray-500">Terms & Conditions</li>
             </ul>
           </div>
 
           {/* Contact */}
-          <div className="lg:col-span-1">
+          <div>
             <h4 className="font-semibold mb-4 underline underline-offset-8">
               Contact
             </h4>
-
             <div className="space-y-4 text-sm text-gray-300">
               <div className="flex gap-3">
-                <MapPin size={18} />
+                <MapPin size={18} className="shrink-0 mt-0.5" />
                 <p>
-                  Vikas Tech Solutions,<br />
-                  423, 4 th Floor,<br />
-                  samanvay Business Square, <br />
-                  Vaikuth Four crossing, <br />
+                  Trainer Adda,<br />
+                  423, 4th Floor,<br />
+                  Samanvay Business Square,<br />
+                  Vaikunth Four Crossing,<br />
                   Vadodara, Gujarat
                 </p>
               </div>
 
-              <div className="flex gap-3">
-                <Mail size={18} />
-                <p>support@vikashtechsolutions.com</p>
+              <div className="flex gap-3 items-center">
+                <Mail size={18} className="shrink-0" />
+                <a href="mailto:support@traineradda.com" className={footerLink}>
+                  support@traineradda.com
+                </a>
               </div>
 
-              <div className="flex gap-3">
-                <Phone size={18} />
-                <p>+91 83203 53164</p>
+              <div className="flex gap-3 items-center">
+                <Phone size={18} className="shrink-0" />
+                <a href="tel:+918320353164" className={footerLink}>
+                  +91 83203 53164
+                </a>
               </div>
             </div>
           </div>
@@ -93,11 +132,11 @@ export default function Footer() {
             </h4>
             <div className="flex gap-4 text-white">
               <a
-                href="https://www.youtube.com/@fixWithvikas"
+                href="https://www.youtube.com/@CodeWithvikas"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="hover:text-red-500 transition-colors duration-200"
+                className="cursor-pointer hover:text-red-500 transition-colors duration-200"
               >
                 <Youtube size={22} />
               </a>
@@ -106,7 +145,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className="hover:text-blue-500 transition-colors duration-200"
+                className="cursor-pointer hover:text-blue-500 transition-colors duration-200"
               >
                 <Facebook size={22} />
               </a>
@@ -115,7 +154,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X (Twitter)"
-                className="hover:text-sky-400 transition-colors duration-200"
+                className="cursor-pointer hover:text-sky-400 transition-colors duration-200"
               >
                 <Twitter size={22} />
               </a>
@@ -124,7 +163,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="hover:text-pink-500 transition-colors duration-200"
+                className="cursor-pointer hover:text-pink-500 transition-colors duration-200"
               >
                 <Instagram size={22} />
               </a>
@@ -133,7 +172,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="hover:text-blue-400 transition-colors duration-200"
+                className="cursor-pointer hover:text-blue-400 transition-colors duration-200"
               >
                 <Linkedin size={22} />
               </a>
@@ -141,17 +180,14 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-500 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-
-          {/* Logo */}
-          <div className="flex items-center gap-2">
-           <img src={logo} alt="Logo" className="w-40 h-40" />
-          </div>
-
-          {/* Copyright */}
+        <div className="border-t border-gray-500 mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 pb-8">
+          <BrandLogo
+            variant="light"
+            showTagline
+            iconClassName="h-11 sm:h-12 w-auto"
+          />
           <p className="text-sm text-gray-400">
-            © VTS 2025. All rights reserved.
+            © {new Date().getFullYear()} Trainer Adda. All rights reserved.
           </p>
         </div>
       </div>

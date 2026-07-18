@@ -104,7 +104,7 @@ export default function PostJobForm() {
                 value={form.title}
                 onChange={handleChange}
                 placeholder="Enter the Job Title"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               />
             </div>
@@ -117,7 +117,7 @@ export default function PostJobForm() {
                 value={form.skills}
                 onChange={handleChange}
                 placeholder="e.g. Python, Java, React"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               />
             </div>
@@ -130,7 +130,7 @@ export default function PostJobForm() {
                 value={form.experience}
                 onChange={handleChange}
                 placeholder="e.g. 3+ years"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               />
             </div>
@@ -143,7 +143,7 @@ export default function PostJobForm() {
                 value={form.trainersNeeded}
                 onChange={handleChange}
                 placeholder="Enter the Number of Trainers"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
                 min="1"
               />
@@ -157,7 +157,7 @@ export default function PostJobForm() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Enter the Email Address"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               />
             </div>
@@ -170,7 +170,7 @@ export default function PostJobForm() {
                 value={form.contact}
                 onChange={handleChange}
                 placeholder="Enter the Phone Number"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               />
             </div>
@@ -181,7 +181,7 @@ export default function PostJobForm() {
                 name="level"
                 value={form.level}
                 onChange={handleChange}
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               >
                 <option value="">Select level</option>
@@ -198,7 +198,7 @@ export default function PostJobForm() {
                 name="trainingType"
                 value={form.trainingType}
                 onChange={handleChange}
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               >
                 <option value="">Select type</option>
@@ -218,7 +218,7 @@ export default function PostJobForm() {
                 name="mode"
                 value={form.mode}
                 onChange={handleChange}
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
                 required
               >
                 <option value="">Select mode</option>
@@ -236,7 +236,7 @@ export default function PostJobForm() {
                 value={form.duration}
                 onChange={handleChange}
                 placeholder="e.g. 40 hours"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
               />
             </div>
 
@@ -248,7 +248,7 @@ export default function PostJobForm() {
                 value={form.location}
                 onChange={handleChange}
                 placeholder="Enter the Training Location"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
               />
             </div>
 
@@ -260,7 +260,7 @@ export default function PostJobForm() {
                 value={form.budget}
                 onChange={handleChange}
                 placeholder="e.g. ₹500–₹800/hr or Negotiable"
-                className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+                className="input-field"
               />
             </div>
           </div>
@@ -318,7 +318,7 @@ export default function PostJobForm() {
             <button
               type="submit"
               disabled={loading}
-              className="bg-[#B11C20] hover:bg-red-700 disabled:opacity-70 disabled:cursor-not-allowed transition text-white px-8 py-3 rounded-lg text-sm font-medium"
+              className="btn-primary"
             >
               {loading ? 'Submitting...' : 'Submit Application'}
             </button>

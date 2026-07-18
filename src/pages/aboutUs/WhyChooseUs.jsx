@@ -3,30 +3,28 @@ export default function WhyChooseUs() {
     {
       step: "1",
       title: "Trusted Trainer Network",
-      desc: "Tell us about your training needs, required skills, experience level, teaching mode, and availability by submitting a simple job requirement.",
+      desc: "Access a curated network of verified trainers across technical and professional domains, carefully evaluated for skills and reliability.",
     },
     {
       step: "2",
-      title: "We Match you with Trainers",
-      desc: "Based on your requirement, we shortlist and match you with suitable trainers who align with your expectations and training objectives.",
+      title: "Smart Matching",
+      desc: "We shortlist trainers who align with your skills, experience, training mode, and budget so you spend less time searching.",
     },
     {
       step: "3",
-      title: "Review & Interview",
-      desc: "Review trainer profiles, connect with shortlisted trainers, and conduct discussions or interviews to evaluate fit before making a decision.",
+      title: "Transparent Process",
+      desc: "Review profiles, connect directly, and interview candidates with clear communication at every step of the hiring journey.",
     },
     {
       step: "4",
-      title: "Hire the Right Trainer",
-      desc: "Finalize your selection and onboard the trainer with confidence, knowing you have chosen the right professional for your training needs.",
+      title: "End-to-End Support",
+      desc: "From posting requirements to onboarding, Trainer Adda supports you so collaborations start smoothly and stay successful.",
     },
   ];
 
   return (
     <section className="bg-[#FAFAFA] py-24">
       <div className="max-w-7xl mx-auto px-6">
-
-        {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
             Why Choose Us
@@ -34,31 +32,24 @@ export default function WhyChooseUs() {
           <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
         </div>
 
-        {/* Steps */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((item) => (
             <div
               key={item.step}
-              className="bg-[#E6F0FF] h-72 rounded-xl p-8 shadow-md text-center"
+              className="bg-[#E6F0FF] min-h-72 rounded-xl p-8 shadow-md text-center"
             >
-              {/* Step Number */}
               <div className="w-12 h-12 mx-auto rounded-full bg-blue-700 text-white flex items-center justify-center text-lg font-semibold">
                 {item.step}
               </div>
-
-              {/* Title */}
               <h3 className="mt-6 font-semibold text-lg text-black">
                 {item.title}
               </h3>
-
-              {/* Description */}
               <p className="mt-3 text-sm text-gray-600 leading-relaxed">
                 {item.desc}
               </p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

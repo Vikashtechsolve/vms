@@ -101,7 +101,7 @@ export default function PopularCategories() {
         <div className="flex justify-center mt-8">
           <button
             onClick={() => navigate('/find-jobs')}
-            className="bg-[#B11C20] hover:bg-[#9C161A] transition p-4 rounded-2xl text-white"
+            className="btn-primary rounded-2xl px-6 py-3"
           >
             See All Categories
           </button>

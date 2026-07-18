@@ -49,7 +49,7 @@ export default function HowHiringWorks() {
             <div
               key={item.step}
               className="
-                bg-[#E6F0FF] h-72 rounded-xl p-8 shadow-md text-center
+                bg-[#E6F0FF] min-h-72 rounded-xl p-8 shadow-md text-center
                 min-w-[85%] snap-center
                 sm:min-w-0
               "

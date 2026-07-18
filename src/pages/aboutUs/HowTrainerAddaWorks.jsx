@@ -5,7 +5,7 @@ import {
   UserCheck,
 } from "lucide-react";
 
-export default function HowVMSWorks() {
+export default function HowTrainerAddaWorks() {
   const steps = [
     {
       icon: <Globe size={26} />,
@@ -25,7 +25,7 @@ export default function HowVMSWorks() {
     {
       icon: <UserCheck size={26} />,
       title: "Right Trainer Gets Hired",
-      desc: "Once finalized, trainers are onboarded smoothly with continuous support from VTS to ensure a successful and productive collaboration.",
+      desc: "Once finalized, trainers are onboarded smoothly with continuous support from Trainer Adda to ensure a successful and productive collaboration.",
     },
   ];
 
@@ -36,7 +36,7 @@ export default function HowVMSWorks() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-black">
-            How VMS Works
+            How Trainer Adda Works
           </h2>
           <div className="w-20 h-[2px] bg-blue-600 mx-auto mt-2" />
         </div>

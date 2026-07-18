@@ -7,5 +7,55 @@
 
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE & Edge */
-  scrollbar-width: none;     /* Firefox */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* ===== Global interactive cursors ===== */
+@layer base {
+  button:not(:disabled),
+  a,
+  [role="button"],
+  label,
+  select,
+  summary,
+  input[type="checkbox"],
+  input[type="radio"],
+  input[type="file"],
+  input[type="submit"],
+  input[type="button"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  input:disabled,
+  select:disabled,
+  textarea:disabled {
+    cursor: not-allowed;
+  }
+
+  /* Smooth focus for keyboard users */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid #B11C20;
+    outline-offset: 2px;
+  }
+}
+
+/* ===== Shared brand button styles ===== */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center bg-[#B11C20] hover:bg-[#9C161A] text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center border border-gray-400 hover:border-black hover:bg-gray-50 text-gray-800 px-6 py-3 rounded-lg text-sm font-medium transition-colors duration-200 cursor-pointer;
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center border border-black hover:bg-black hover:text-white text-black px-6 py-3 rounded-xl text-base font-medium transition-colors duration-200 cursor-pointer;
+  }
+
+  .input-field {
+    @apply mt-2 w-full rounded-lg border border-gray-300 px-4 py-3 text-sm outline-none bg-white transition focus:ring-2 focus:ring-blue-500 focus:border-blue-500;
+  }
 }

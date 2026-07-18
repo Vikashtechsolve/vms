@@ -105,7 +105,7 @@ export default function PostJobSection() {
         <div className="mt-16">
           <button
             onClick={() => navigate("/postJob-form")}
-            className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-10 py-3 rounded-xl text-base font-medium"
+            className="btn-primary px-10 py-3 rounded-xl text-base"
           >
             Post a Job
           </button>

@@ -108,7 +108,7 @@ export default function JobCard({ job, onApply }) {
           <button
             type="button"
             onClick={() => onApply(job)}
-            className="shrink-0 bg-[#B11C20] hover:bg-[#8f1519] text-white text-sm font-semibold px-5 py-2 rounded-lg transition-colors duration-150"
+            className="btn-primary shrink-0 px-5 py-2"
           >
             Apply
           </button>

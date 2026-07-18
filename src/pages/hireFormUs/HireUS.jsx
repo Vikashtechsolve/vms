@@ -32,28 +32,30 @@ export default function HireTrainersHero() {
         </p>
 
         {/* BUTTONS */}
-        <div className="mt-10 flex justify-center gap-6 flex-wrap">
+        <div className="mt-10 flex justify-center gap-4 sm:gap-6 flex-wrap relative z-10">
           <button
+            type="button"
             onClick={() => navigate("/CompanyRegistration")}
-            className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-8 py-3 rounded-xl text-base font-medium"
+            className="btn-primary px-8 py-3 rounded-xl text-base"
           >
             Hire Trainers
           </button>
 
           <button
+            type="button"
             onClick={() => navigate("/postJob-form")}
-            className="border border-black hover:bg-black hover:text-white transition px-8 py-3 rounded-xl text-base font-medium"
+            className="btn-outline-light"
           >
             Post a Job
           </button>
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="absolute right-6 bottom-0 hidden lg:block">
+        <div className="absolute right-0 bottom-0 hidden xl:block pointer-events-none">
           <img
             src={peopleImg}
             alt="Hire Trainers"
-            className="w-[340px]"
+            className="w-[300px]"
           />
         </div>
       </div>
@@ -67,9 +69,13 @@ export default function HireTrainersHero() {
 
       <div className="bg-[#F1F1F1] py-16 mt-20 text-center">
         <h1 className="text-2xl font-semibold text-black">Ready to Hire the Right Trainer?</h1>
-        <button onClick={() => navigate('/postJob-form')}
-         className="bg-[#B11C20] hover:bg-[#9C161A] transition text-white px-8 py-3 rounded-xl text-base font-medium mt-4">
-        Post a Job </button>
+        <button
+          type="button"
+          onClick={() => navigate("/postJob-form")}
+          className="btn-primary px-8 py-3 rounded-xl text-base mt-4"
+        >
+          Post a Job
+        </button>
       </div>
     </section>
   );

@@ -101,7 +101,7 @@ export default function CreateTrainerProfile() {
             Profile Photo
           </h3>
           <div className="mb-8">
-            <Label text="Upload your profile photo (stored in Cloudinary)" />
+            <Label text="Upload your profile photo" />
             <label className="mt-2 flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-blue-500 hover:bg-blue-50/50 transition">
               <Upload className="w-8 h-8 text-gray-500 mb-2" />
               <span className="text-sm text-gray-600">
@@ -196,7 +196,7 @@ export default function CreateTrainerProfile() {
 
           {/* Resume Upload */}
           <div className="mt-6">
-            <Label text="Resume (stored in Cloudinary)" />
+            <Label text="Resume" />
             <label className="mt-2 flex flex-col items-center justify-center w-full h-32 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer hover:border-blue-500 hover:bg-blue-50/50 transition">
               <FileText className="w-8 h-8 text-gray-500 mb-2" />
               <span className="text-sm text-gray-600">
@@ -216,7 +216,7 @@ export default function CreateTrainerProfile() {
             <button
               type="submit"
               disabled={loading}
-              className="bg-[#B11C20] hover:bg-red-700 disabled:opacity-70 disabled:cursor-not-allowed transition text-white px-8 py-3 rounded-lg text-sm font-medium"
+              className="btn-primary"
             >
               {loading ? "Submitting..." : "Submit Application"}
             </button>
@@ -245,7 +245,7 @@ const Input = ({ label, placeholder, name, value, onChange }) => (
       placeholder={placeholder}
       value={value || ""}
       onChange={onChange}
-      className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+      className="input-field"
     />
   </div>
 );
@@ -259,7 +259,7 @@ const PassingYearSelect = ({ label, value, onChange }) => {
       <select
         value={value}
         onChange={onChange}
-        className="mt-2 w-full rounded-lg border px-4 py-3 text-sm outline-none"
+        className="input-field"
       >
         <option value="">Select Passing Year</option>
         {years.map((year) => (

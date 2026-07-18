@@ -85,7 +85,7 @@ export default function WhatWeProvide() {
               </li>
               <li className="flex gap-3">
                 <Check className="text-blue-600 mt-1" size={18} />
-                Receive dedicated support from VTS to ensure smooth coordination and quality assurance throughout the engagement.
+                Receive dedicated support from Trainer Adda to ensure smooth coordination and quality assurance throughout the engagement.
               </li>
             </ul>
           </div>

@@ -52,24 +52,26 @@ export default function HowItWorks() {
         <div className="mt-8 flex justify-center">
           <div className="bg-[#EEEEEE] rounded-full p-2 flex gap-2">
             <button
+              type="button"
               onClick={() => setActiveTab("trainers")}
-              className={`px-3 py-2 rounded-full text-sm font-medium transition
+              className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer
                 ${
                   activeTab === "trainers"
                     ? "bg-[#B11C20] text-white"
-                    : "bg-white text-black"
+                    : "bg-white text-black hover:bg-gray-100"
                 }`}
             >
               For Trainers
             </button>
 
             <button
+              type="button"
               onClick={() => setActiveTab("companies")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition
+              className={`px-6 py-2 rounded-full text-sm font-medium transition cursor-pointer
                 ${
                   activeTab === "companies"
                     ? "bg-[#B11C20] text-white"
-                    : "bg-white text-black"
+                    : "bg-white text-black hover:bg-gray-100"
                 }`}
             >
               For Companies

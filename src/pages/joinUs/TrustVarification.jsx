@@ -5,7 +5,7 @@ import {
   Building2,
 } from "lucide-react";
 
-import trustImg from "../../../public//circleImg.jpg"; 
+import trustImg from "../../../public/circleImg.jpg"; 
 
 export default function TrustVerification() {
   return (

@@ -21,7 +21,7 @@ export default function WhoWeAre() {
           {/* LEFT TEXT */}
           <div className="text-gray-600 text-sm leading-relaxed space-y-6">
             <p>
-              Vikash Manpower Solution (VMS) is a dedicated hiring platform built
+              Trainer Adda is a dedicated hiring platform built
               to connect skilled trainers with organizations that value quality
               education and professional training. We focus on creating
               meaningful connections where trainers find the right
@@ -37,7 +37,7 @@ export default function WhoWeAre() {
             </p>
 
             <p>
-              Backed by Vikash Tech Solution, VMS follows a quality-first
+              At Trainer Adda, we follow a quality-first
               approach—ensuring trainers are carefully evaluated and companies
               receive the best-fit talent for their training goals.
             </p>
@@ -73,7 +73,7 @@ export default function WhoWeAre() {
           </div>
 
           {/* Vision */}
-          <div className="max-w-3xl mx-auto lg:mr-20 bg-white rounded-xl shadow-md p-6 flex gap-4 items-start">
+          <div className="max-w-3xl mx-auto bg-white rounded-xl shadow-md p-6 flex gap-4 items-start">
             <div className="text-blue-600 mt-1">
               <Eye size={26} />
             </div>

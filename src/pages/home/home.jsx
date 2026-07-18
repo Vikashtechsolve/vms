@@ -1,23 +1,41 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
-import heroImg from "../../../public/home.png"; 
-import { UsersRound, MapPin, UserRoundCheck, CloudCheck} from 'lucide-react';
+import heroImg from "../../../public/home.png";
+import { UsersRound, MapPin, UserRoundCheck, CloudCheck } from "lucide-react";
+
+const stats = [
+  {
+    icon: <UsersRound color="#B11C20" fill="#B11C20" className="shrink-0" />,
+    value: "10,000 +",
+    label: "Skilled Trainers Available",
+  },
+  {
+    icon: <MapPin fill="#fff" color="#B11C20" className="shrink-0" />,
+    value: "2,500 +",
+    label: "Companies Hiring Trainers",
+  },
+  {
+    icon: <UserRoundCheck fill="#B11C20" color="#B11C20" className="shrink-0" />,
+    value: "25,000 +",
+    label: "Successful Trainer Placements",
+  },
+  {
+    icon: <CloudCheck color="#B11C20" className="shrink-0" />,
+    value: "98%",
+    label: "Client & Trainer Satisfaction",
+  },
+];
 
 const Home = () => {
   const navigate = useNavigate();
 
   return (
     <section
-      className="w-full"
+      className="w-full pb-16"
       style={{
-        background:
-          "linear-gradient(180deg, #E6F0FF 0%, #F5F9FF 100%)",
+        background: "linear-gradient(180deg, #E6F0FF 0%, #F5F9FF 100%)",
       }}
     >
-      
-      <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-        
-       
+      <div className="max-w-7xl mx-auto px-6 py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         <div>
           <h1 className="text-4xl lg:text-5xl font-bold text-black leading-tight">
             Find & Hire <br /> Right Trainers
@@ -28,83 +46,49 @@ const Home = () => {
             and companies connect with skilled professionals.
           </p>
 
-          <div className="w-24 h-[2px] bg-blue-600 mt-6"></div>
+          <div className="w-24 h-[2px] bg-blue-600 mt-6" />
 
-         
-          <div className="mt-8 flex gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <button
+              type="button"
               onClick={() => navigate("/TrainerProfile")}
-              className="bg-red-600 hover:bg-red-700 transition text-white px-6 py-3 rounded-lg font-medium"
+              className="btn-primary"
             >
               Join as Trainer
             </button>
 
             <button
+              type="button"
               onClick={() => navigate("/CompanyRegistration")}
-              className="border border-gray-400 hover:border-black transition px-6 py-3 rounded-lg font-medium text-gray-800"
+              className="btn-secondary"
             >
               Hire Trainers
             </button>
           </div>
         </div>
 
-      
         <div className="flex justify-center lg:justify-end">
           <img
             src={heroImg}
-            alt="Trainers"
+            alt="Find and hire trainers on Trainer Adda"
             className="max-w-full h-auto"
           />
         </div>
       </div>
 
-     
-      <div className="max-w-7xl mx-auto px-2  grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2">
-        
-    
-        <div className="bg-[#F1F1F1] rounded-lg pl-2 h-22 flex gap-4 items-center">
-         
-         <UsersRound color="#B11C20" fill="#B11C20" /> 
-          <div>
-             <h3  className="text-md font-semibold"> 10,000 +</h3>
-            <p className="text-sm text-gray-600">
-              Skilled Trainers Available
-            </p>
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {stats.map((item) => (
+          <div
+            key={item.label}
+            className="bg-white/80 backdrop-blur-sm rounded-xl px-4 py-4 min-h-[88px] flex gap-4 items-center shadow-sm border border-white/60"
+          >
+            {item.icon}
+            <div>
+              <h3 className="text-xl font-semibold text-black">{item.value}</h3>
+              <p className="text-sm text-gray-600">{item.label}</p>
+            </div>
           </div>
-        </div>
-
-     
-        <div className="bg-[#F1F1F1] rounded-lg pl-2 h-22 flex gap-4 items-center">
-          <MapPin fill="#fff" color="#B11C20" />
-          <div>
-            <h3 className="text-xl font-semibold">2,500 +</h3>
-            <p className="text-sm text-gray-600">
-              Companies Hiring Trainers
-            </p>
-          </div>
-        </div>
-
-   
-        <div className="bg-[#F1F1F1] rounded-lg pl-2 h-22 flex gap-4 items-center">
-          <UserRoundCheck  fill="#B11C20" color="#B11C20" />
-          <div>
-            <h3 className="text-xl font-semibold">25,000 +</h3>
-            <p className="text-sm text-gray-600">
-              Successful Trainer Placements
-            </p>
-          </div>
-        </div>
-
-       
-         <div className="bg-[#F1F1F1] rounded-lg pl-2 h-22 flex gap-4 items-center">
-           <CloudCheck color="#B11C20"  />
-          <div>
-            <h3 className="text-xl font-semibold">98%</h3>
-            <p className="text-sm text-gray-600">
-              Client & Trainer Satisfaction
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   );
