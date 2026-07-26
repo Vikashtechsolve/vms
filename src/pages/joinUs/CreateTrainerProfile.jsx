@@ -1,12 +1,18 @@
 import { useState } from "react";
 import { User, Upload, FileText } from "lucide-react";
+import { useLocationOptions, citiesForState } from "../../hooks/useLocationOptions.js";
+import SearchableSelect from "../../components/SearchableSelect.jsx";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000/api";
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 const INITIAL_FORM = {
   name: "",
+  email: "",
   contact: "",
-  location: "",
+  state: "",
+  city: "",
   qualification: "",
   passingYear: "",
   subject: "",
@@ -17,6 +23,20 @@ const INITIAL_FORM = {
   workLookingFor: "",
   mode: "",
 };
+
+function validateForm(form) {
+  const name = form.name.trim();
+  const email = form.email.trim().toLowerCase();
+  const contact = form.contact.trim();
+
+  if (!name || !contact) {
+    return "Full name and contact number are required.";
+  }
+  if (email && !EMAIL_RE.test(email)) {
+    return "Enter a valid email address.";
+  }
+  return null;
+}
 
 export default function CreateTrainerProfile() {
   const [form, setForm] = useState(INITIAL_FORM);
@@ -43,9 +63,23 @@ export default function CreateTrainerProfile() {
     e.preventDefault();
     setLoading(true);
     setMessage({ type: "", text: "" });
+
+    const validationError = validateForm(form);
+    if (validationError) {
+      setMessage({ type: "error", text: validationError });
+      setLoading(false);
+      return;
+    }
+
     try {
       const fd = new FormData();
-      Object.entries(form).forEach(([k, v]) => {
+      const payload = {
+        ...form,
+        name: form.name.trim(),
+        email: form.email.trim().toLowerCase(),
+        contact: form.contact.trim(),
+      };
+      Object.entries(payload).forEach(([k, v]) => {
         if (v) fd.append(k, v);
       });
       if (photoFile) fd.append("photo", photoFile);
@@ -121,10 +155,25 @@ export default function CreateTrainerProfile() {
             Personal Information
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Input label="Full Name" name="name" placeholder="Enter Full Name" value={form.name} onChange={handleInputChange} />
-            <Input label="Contact Number" name="contact" placeholder="Enter the Contact Number" value={form.contact} onChange={handleInputChange} />
-            <Input label="Location" name="location" placeholder="Enter the Location" value={form.location} onChange={handleInputChange} />
+            <Input label="Email" name="email" type="email" placeholder="Enter Email Address (optional)" value={form.email} onChange={handleInputChange} autoComplete="email" required={false} />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <Input label="Contact Number" name="contact" type="tel" placeholder="Enter contact number" value={form.contact} onChange={handleInputChange} autoComplete="tel" />
+            <StateSelect
+              value={form.state}
+              onChange={(state) => setForm((prev) => ({ ...prev, state, city: "" }))}
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <CitySelect
+              state={form.state}
+              value={form.city}
+              onChange={(city) => setForm((prev) => ({ ...prev, city }))}
+            />
           </div>
 
           {/* PROFESSIONAL INFO */}
@@ -230,26 +279,64 @@ export default function CreateTrainerProfile() {
 
 /* ===== Reusable Components ===== */
 
-const Label = ({ text }) => (
+const Label = ({ text, required = true }) => (
   <p className="text-sm text-gray-600">
-    {text} <span className="text-red-500">*</span>
+    {text} {required && <span className="text-red-500">*</span>}
   </p>
 );
 
-const Input = ({ label, placeholder, name, value, onChange }) => (
+const Input = ({ label, placeholder, name, value, onChange, type = "text", autoComplete, required = true }) => (
   <div>
-    <Label text={label} />
+    <Label text={label} required={required} />
     <input
-      type="text"
+      type={type}
       name={name}
       placeholder={placeholder}
       value={value || ""}
       onChange={onChange}
-      required
+      required={required}
+      autoComplete={autoComplete}
       className="input-field"
     />
   </div>
 );
+
+const StateSelect = ({ value, onChange }) => {
+  const { states, loading } = useLocationOptions();
+  return (
+    <div>
+      <Label text="State" required={false} />
+      <SearchableSelect
+        value={value}
+        onChange={onChange}
+        options={states.map((s) => s.state)}
+        placeholder={loading ? "Loading states..." : "Select State"}
+        searchPlaceholder="Search state..."
+        emptyMessage="No state found"
+        disabled={loading}
+      />
+    </div>
+  );
+};
+
+const CitySelect = ({ state, value, onChange }) => {
+  const { states, loading } = useLocationOptions();
+  const cities = citiesForState(states, state);
+  return (
+    <div>
+      <Label text="City" required={false} />
+      <SearchableSelect
+        value={value}
+        onChange={onChange}
+        options={cities}
+        placeholder={state ? "Select City" : "Select State first"}
+        searchPlaceholder="Search city..."
+        emptyMessage="No city found"
+        disabled={loading || !state}
+      />
+    </div>
+  );
+};
 
 const PassingYearSelect = ({ label, value, onChange }) => {
   const currentYear = new Date().getFullYear();
