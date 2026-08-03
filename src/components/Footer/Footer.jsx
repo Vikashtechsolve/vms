@@ -1,5 +1,4 @@
 import {
-  MapPin,
   Mail,
   Phone,
   Youtube,
@@ -98,17 +97,6 @@ export default function Footer() {
               Contact
             </h4>
             <div className="space-y-4 text-sm text-gray-300">
-              <div className="flex gap-3">
-                <MapPin size={18} className="shrink-0 mt-0.5" />
-                <p>
-                  Trainer Adda,<br />
-                  423, 4th Floor,<br />
-                  Samanvay Business Square,<br />
-                  Vaikunth Four Crossing,<br />
-                  Vadodara, Gujarat
-                </p>
-              </div>
-
               <div className="flex gap-3 items-center">
                 <Mail size={18} className="shrink-0" />
                 <a href="mailto:support@traineradda.com" className={footerLink}>
